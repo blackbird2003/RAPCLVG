@@ -1,0 +1,243 @@
+{
+  "story_name": "msvbench_55_character_reference",
+  "story_overview": "MSVBench story 55 (Science Fiction). On November 9th, I woke up on the Nautilus submarine after sleeping for a full twelve hours. On November 11th, I stepped onto the platform to breathe fresh air and saw the first mate using binoculars to observe the surroundings. My companions and I put on diving suits, preparing for this peculiar underwater hunting expedition.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "55",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning, inside the Nautilus submarine, bedroom, quiet atmosphere, bed, desk, map hanging on the wall, soft lighting. Professor Aronnax lies in bed, just opening his eyes with a somewhat confused expression. A book and glasses are placed on the nightstand. On November 9th, I woke up on the Nautilus submarine after sleeping for a full twelve hours. Medium shot, eye level shot.",
+        "Early morning, inside the Nautilus submarine, bedroom, quiet atmosphere, bed, desk, map hanging on the wall, soft lighting. Conseil stands by the bed, slightly bending forward with a concerned expression. Professor Aronnax sits on the bed, smiling in response. Conseil enters to greet me and then begins his work. Medium close up, eye level shot.",
+        "Early morning, inside the Nautilus submarine, another bedroom, quiet atmosphere, bed, simple furniture, fishing net hanging on the wall, dim lighting. Ned Land lies on the bed, snoring loudly with a peaceful expression. One arm rests on the side of the bed. The Canadian, Ned Land, is still sound asleep. Medium shot, side shot.",
+        "Early morning, inside the Nautilus submarine, bedroom, quiet atmosphere, wardrobe, mirror, desk, soft lighting. Professor Aronnax stands in front of the mirror, fastening the last button of his clothes with a satisfied expression. The fabric appears soft and glossy. I dressed in clothes made of shellfish fiber, a material that is both soft and warm. Close up, eye level shot.",
+        "Morning, inside the Nautilus submarine, lounge, luxurious decor, sofa, coffee table, ocean-themed paintings on the wall, bright lighting. Professor Aronnax sits on the sofa, holding a book with an expectant expression, occasionally glancing toward the door. I went to the lounge to wait for Captain Nemo, but he did not appear. Full shot, eye level shot.",
+        "Morning, inside the Nautilus submarine, lounge, luxurious decor, display cabinet, sofa, coffee table, bright lighting. Professor Aronnax stands in front of the display cabinet, carefully observing shell specimens with a focused expression. One hand lightly touches a specimen. I examined the shell and plant specimens in the cabinet, but the captain still did not show up. Medium close up, eye level shot.",
+        "Morning, inside the Nautilus submarine, dining room, simple decor, dining table, chairs, nautical chart on the wall, bright lighting. The three sit around the dining table with puzzled expressions. Conseil frowns slightly, while Ned Land crosses his arms. On November 10th, we still hadn't seen the captain. Conseil, Ned Land, and I were all puzzled. Full shot, eye level shot.",
+        "Noon, inside the Nautilus submarine, dining room, simple decor, dining table laden with food, tableware, nautical chart on the wall, bright lighting. The three are eating. Professor Aronnax looks thoughtful, Conseil chews slowly, and Ned Land eats meat heartily. We enjoyed the freedom and food on the ship, but the captain's absence was unsettling. Medium shot, eye level shot.",
+        "Morning, outside the Nautilus submarine, platform, vast ocean, railing, first mate, binoculars, distant horizon, fresh sea breeze. Professor Aronnax stands in the center of the platform, taking a deep breath with a relaxed expression. The first mate stands nearby, using binoculars to observe the surroundings. On November 11th, I stepped onto the platform to breathe fresh air and saw the first mate using binoculars to observe the surroundings. Medium long shot, high-angle shot.",
+        "Morning, outside the Nautilus submarine, platform, vast ocean, railing, first mate, binoculars, distant horizon, fresh sea breeze. The first mate lowers the binoculars with a serious expression and utters the strange phrase. Professor Aronnax stands nearby, looking confused. The first mate said a strange phrase: 'Nautron respoc lorni virch.' I didn't understand its meaning. Medium close up, eye level shot.",
+        "Afternoon, inside the Nautilus submarine, corridor, quiet atmosphere, portholes on the wall, shadows on the floor, distant cabin door, dim lighting. The empty corridor has light streaming through the portholes, casting mottled shadows on the floor. For the next five days, the situation remained unchanged—the captain did not appear. Wide shot, eye level shot.",
+        "Morning, inside the Nautilus submarine, lounge, luxurious decor, letter on the coffee table, sofa, ocean-themed painting on the wall, bright lighting. Professor Aronnax sits on the sofa, holding the captain's letter with a surprised expression. The envelope bears the captain's emblem. On November 16th, I received a letter from the captain inviting my companions and me to hunt in the forests of Crespo Island. Medium close up, eye level shot.",
+        "Morning, inside the Nautilus submarine, lounge, luxurious decor, letter on the coffee table, sofa, ocean-themed painting on the wall, map table, bright lighting. The three gather around the map table. Professor Aronnax points to Crespo Island on the map with a puzzled expression. Conseil and Ned Land lean in to look. We were all surprised because the captain had always despised land. I checked the map and found that Crespo Island was a desolate islet. Medium shot, eye level shot.",
+        "Morning, inside the Nautilus submarine, captain's quarters, simple yet imposing decor, desk, chair, nautical chart on the wall, bright lighting. Captain Nemo sits behind the desk with a stern expression. Professor Aronnax stands in front of the desk, looking surprised. On November 17th, I met the captain, who explained that we were going to an underwater forest, not a land forest. Medium close up, eye level shot.",
+        "Morning, inside the Nautilus submarine, captain's quarters, simple yet imposing decor, diving equipment on the desk, nautical chart on the wall, bright lighting. Captain Nemo stands by the desk, holding the Rouquayrol breathing apparatus with a proud expression. The equipment's details are clearly visible. He displayed a set of diving equipment, including the Rouquayrol breathing apparatus and Ruhmkorff lamps, which would allow us to move and illuminate freely underwater. Close up, eye level shot.",
+        "Morning, inside the Nautilus submarine, captain's quarters, simple yet imposing decor, hunting gun on the desk, nautical chart on the wall, bright lighting. Captain Nemo holds the hunting gun with a serious expression. The gun's details are shown in close-up as he lightly runs his fingers over it. He also introduced a special hunting gun that used compressed air and high-pressure glass bullets, which were immensely powerful. Close up, eye level shot.",
+        "Afternoon, inside the Nautilus submarine, preparation room, simple decor, diving suits, equipment rack, operational guide on the wall, bright lighting. The three are putting on diving suits. Professor Aronnax adjusts the breathing apparatus, Conseil checks the lamp, and Ned Land picks up the hunting gun with an eager expression. My companions and I put on diving suits, preparing for this peculiar underwater hunting expedition. Full shot, eye level shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Conseil/merge.jpg",
+            "label": "Conseil",
+            "guidance": "这张图片是角色Conseil的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged French man with a gentle and meticulous personality. He has a short stature, sparse gray hair, and brown eyes. As the professor's assistant, he wears a neat uniform."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Ned_Land/merge.jpg",
+            "label": "Ned Land",
+            "guidance": "这张图片是角色Ned Land的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A strong Canadian harpooner with a straightforward and irritable temperament. He is tall and muscular, with thick brown hair and sharp blue eyes. He wears simple sailor attire and always carries a sharp dagger."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Conseil/merge.jpg",
+            "label": "Conseil",
+            "guidance": "这张图片是角色Conseil的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged French man with a gentle and meticulous personality. He has a short stature, sparse gray hair, and brown eyes. As the professor's assistant, he wears a neat uniform."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Ned_Land/merge.jpg",
+            "label": "Ned Land",
+            "guidance": "这张图片是角色Ned Land的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A strong Canadian harpooner with a straightforward and irritable temperament. He is tall and muscular, with thick brown hair and sharp blue eyes. He wears simple sailor attire and always carries a sharp dagger."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Conseil/merge.jpg",
+            "label": "Conseil",
+            "guidance": "这张图片是角色Conseil的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged French man with a gentle and meticulous personality. He has a short stature, sparse gray hair, and brown eyes. As the professor's assistant, he wears a neat uniform."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Ned_Land/merge.jpg",
+            "label": "Ned Land",
+            "guidance": "这张图片是角色Ned Land的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A strong Canadian harpooner with a straightforward and irritable temperament. He is tall and muscular, with thick brown hair and sharp blue eyes. He wears simple sailor attire and always carries a sharp dagger."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/First_Mate/merge.jpg",
+            "label": "First Mate",
+            "guidance": "这张图片是角色First Mate的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：The first mate of the Nautilus submarine. He is tall with stern features."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/First_Mate/merge.jpg",
+            "label": "First Mate",
+            "guidance": "这张图片是角色First Mate的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：The first mate of the Nautilus submarine. He is tall with stern features."
+          }
+        ],
+        [],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Conseil/merge.jpg",
+            "label": "Conseil",
+            "guidance": "这张图片是角色Conseil的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged French man with a gentle and meticulous personality. He has a short stature, sparse gray hair, and brown eyes. As the professor's assistant, he wears a neat uniform."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Ned_Land/merge.jpg",
+            "label": "Ned Land",
+            "guidance": "这张图片是角色Ned Land的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A strong Canadian harpooner with a straightforward and irritable temperament. He is tall and muscular, with thick brown hair and sharp blue eyes. He wears simple sailor attire and always carries a sharp dagger."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Captain_Nemo/merge.jpg",
+            "label": "Captain Nemo",
+            "guidance": "这张图片是角色Captain Nemo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：The mysterious captain of the Nautilus submarine. Highly knowledgeable and technically skilled, he has a slender build, stern features, and deep black eyes. He wears a blue captain's uniform, appearing imposing and enigmatic."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Captain_Nemo/merge.jpg",
+            "label": "Captain Nemo",
+            "guidance": "这张图片是角色Captain Nemo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：The mysterious captain of the Nautilus submarine. Highly knowledgeable and technically skilled, he has a slender build, stern features, and deep black eyes. He wears a blue captain's uniform, appearing imposing and enigmatic."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Captain_Nemo/merge.jpg",
+            "label": "Captain Nemo",
+            "guidance": "这张图片是角色Captain Nemo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：The mysterious captain of the Nautilus submarine. Highly knowledgeable and technically skilled, he has a slender build, stern features, and deep black eyes. He wears a blue captain's uniform, appearing imposing and enigmatic."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Professor_Aronnax/merge.jpg",
+            "label": "Professor Aronnax",
+            "guidance": "这张图片是角色Professor Aronnax的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A curious and adventurous French marine biologist. He wears a suit, has a medium build, gray hair, and gray eyes. He is highly knowledgeable and versatile."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Conseil/merge.jpg",
+            "label": "Conseil",
+            "guidance": "这张图片是角色Conseil的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged French man with a gentle and meticulous personality. He has a short stature, sparse gray hair, and brown eyes. As the professor's assistant, he wears a neat uniform."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/55/Ned_Land/merge.jpg",
+            "label": "Ned Land",
+            "guidance": "这张图片是角色Ned Land的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A strong Canadian harpooner with a straightforward and irritable temperament. He is tall and muscular, with thick brown hair and sharp blue eyes. He wears simple sailor attire and always carries a sharp dagger."
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "story_name": "msvbench_28_no_predefined",
+  "story_overview": "MSVBench story 28 (Japanese Children's Literature). Totto-chan and her mother are walking to the new school. Totto-chan is very interested in the train ticket and asks the ticket inspector uncle if she can keep it, but is refused. Totto-chan’s mother holds her hand as they walk, feeling uneasy because Totto-chan’s previous behavior at school had troubled the teachers, even leading to her expulsion. To her even greater amazement, there are six real train cars serving as classrooms in the schoolyard. Totto-chan feels as if she has stepped into a dream.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "28",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Morning, train station platform, bustling atmosphere, people coming and going on the platform, a train parked beside the platform, sunlight filtering through the platform roof, a ticket box hanging next to the train door, city buildings visible in the distance. Totto-chan stands in front of the ticket inspector uncle with an expectant expression, her right hand outstretched. The ticket inspector uncle smiles and shakes his head, holding a stack of tickets in his left hand. In the background, the ticket box next to the train door is half full. Totto-chan and her mother are walking to the new school. Totto-chan is very interested in the train ticket and asks the ticket inspector uncle if she can keep it, but is refused. Medium shot, eye level shot.",
+        "Morning, train station platform, bustling atmosphere, people coming and going on the platform, a train parked beside the platform, sunlight filtering through the platform roof, a ticket box hanging next to the train door, city buildings visible in the distance. Totto-chan stands beside the train door, looking focused, her eyes fixed on the ticket box, her right hand gently touching it. In the background, the train door is open with passengers boarding and alighting. Seeing the ticket box filled with tickets, Totto-chan dreams of becoming a ticket inspector when she grows up. Medium close up, eye level shot.",
+        "Morning, city street, serene atmosphere, residential houses and shops lining the street, sunlight casting dappled shadows on the ground, sparse pedestrians, the outline of a school visible in the distance. Totto-chan’s mother holds Totto-chan’s hand as they walk down the street. Totto-chan looks cheerful, while her mother appears slightly worried. Their shadows stretch long on the ground. Totto-chan’s mother holds her hand as they walk, feeling uneasy because Totto-chan’s previous behavior at school had troubled the teachers, even leading to her expulsion. Medium long shot, side shot.",
+        "Morning, entrance of the new school, serene atmosphere, two large trees forming the school gate, the school name plate hanging from the branches, a gravel path on the ground, surrounded by green trees and flowers, sunlight filtering through the leaves. Totto-chan and her mother stand at the school gate. Totto-chan looks surprised, pointing at the school name plate with her right hand, while her mother smiles at her. In the background, the two trees forming the gate stand out prominently. When they arrive at the new school, Totto-chan is surprised to find that the school gate is made of two living trees, with the school name plate hanging crookedly from them. Full shot, eye level shot.",
+        "Morning, schoolyard, serene atmosphere, six train cars parked in the yard, surrounded by green grass and trees, sunlight shining on the train cars, the outline of the school building visible in the distance. Totto-chan stands in the center of the schoolyard, looking astonished, her hands covering her mouth. In the background, the six train cars are neatly arranged, gleaming in the sunlight. To her even greater amazement, there are six real train cars serving as classrooms in the schoolyard. Totto-chan feels as if she has stepped into a dream. Wide shot, high-angle shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

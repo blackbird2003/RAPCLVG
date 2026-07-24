@@ -1,0 +1,35 @@
+{
+  "story_name": "msvbench_57_no_predefined",
+  "story_overview": "MSVBench story 57 (Fairy Tales). One day, a domestic donkey was carrying a heavy load, trudging wearily along the road, looking extremely exhausted. Wild Donkey: 'Look how free I am—I can graze anywhere on the mountain without a care in the world. But you, you carry such heavy loads every day and endure the whip of your master, living such a painful life.' Just then, a lion appeared. Seeing that the domestic donkey was protected by its owner, the lion turned and pounced on the solitary wild donkey, swiftly capturing and devouring it.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "57",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, mountain path, weary atmosphere, rugged mountain road, distant peaks, sparse trees, soft natural lighting. The domestic donkey stands in the middle of the mountain path, carrying a heavy load on its back, a harness around its neck, its expression weary and footsteps heavy. One day, a domestic donkey was carrying a heavy load, trudging wearily along the road, looking extremely exhausted. Medium long shot, side view, eye level shot.",
+        "Daytime, hillside, serene atmosphere, lush green grass, distant trees, wildflowers scattered about, bright natural lighting. The wild donkey stands on the hillside, lowering its head to graze leisurely, appearing relaxed and carefree, with no burden on its back. Not far away, a wild donkey was leisurely grazing. Medium shot, front view, eye level shot.",
+        "Daytime, junction between mountain path and hillside, contrasting atmosphere, boundary between the path and grassland, distant peaks, positions of the two donkeys, soft natural lighting. The domestic donkey is on the left side of the frame on the mountain path, while the wild donkey is on the right side of the frame on the hillside. The wild donkey looks up at the domestic donkey with a relaxed yet slightly sympathetic expression. Wild Donkey: 'Look how free I am—I can graze anywhere on the mountain without a care in the world. But you, you carry such heavy loads every day and endure the whip of your master, living such a painful life.'. Full shot, side view, eye level shot.",
+        "Daytime, hillside, tense atmosphere, lush green grass, distant trees, the lion's sudden appearance, strong natural lighting. The lion pounces on the wild donkey from the right side of the frame. The wild donkey, terrified, attempts to flee but is quickly caught by the lion. The lion's gaze is sharp, and its movements are swift and deadly. Just then, a lion appeared. Seeing that the domestic donkey was protected by its owner, the lion turned and pounced on the solitary wild donkey, swiftly capturing and devouring it. Medium close up, side view, low-angle shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "story_name": "msvbench_22_no_predefined",
+  "story_overview": "MSVBench story 22 (Fantasy). Tang San had just entered Dormitory Seven when he defeated the former leader, Wang Sheng, and became the new leader according to the rules. At this moment, a beautiful little girl named Xiao Wu arrived at Dormitory Seven. She was a new work-study student. According to the rules, Tang San had to spar with her. Xiao Wu chose to sleep next to Tang San and suggested they share a quilt. Although Tang San felt a bit awkward, he agreed.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "22",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, inside Dormitory Seven, dormitory room, neatly arranged beds, a few old posters on the wall, sunlight streaming through the curtains, slightly old but tidy, a quiet atmosphere. Tang San stands in the center of the frame, expression calm, fists slightly clenched. Wang Sheng stands opposite Tang San, looking slightly exhausted, with visible scratches on his body, panting lightly. Tang San had just entered Dormitory Seven when he defeated the former leader, Wang Sheng, and became the new leader according to the rules. Medium shot, eye level shot.",
+        "Daytime, inside Dormitory Seven, dormitory room, neatly arranged beds, a few old posters on the wall, sunlight streaming through the curtains, slightly old but tidy, a quiet atmosphere. Wang Sheng sits on the edge of the bed, expression serious, slightly rolling up his sleeves to reveal scars on his arm, looking at Tang San with determined eyes. Wang Sheng told him that, as the leader, he must protect the dormitory's students from being bullied and showed the scars on his body. Tang San agreed. Medium close up, eye level shot.",
+        "Daytime, inside Dormitory Seven, dormitory room, neatly arranged beds, a few old posters on the wall, sunlight streaming through the curtains, slightly old but tidy, a quiet atmosphere. Tang San and Xiao Wu stand in the center of the dormitory. Tang San looks serious, while Xiao Wu appears relaxed, smiling slightly and revealing her dimples. At this moment, a beautiful little girl named Xiao Wu arrived at Dormitory Seven. She was a new work-study student. According to the rules, Tang San had to spar with her. Full shot, eye level shot.",
+        "Daytime, inside Dormitory Seven, dormitory room, neatly arranged beds, a few old posters on the wall, sunlight streaming through the curtains, slightly old but tidy, a slightly tense atmosphere. Xiao Wu stands in the center of the frame, expression confident, hands in the stance of Rou Ji. Tang San lies on the ground, looking slightly surprised. Xiao Wu's martial soul was a rabbit. Using a technique called Rou Ji, she effortlessly threw Tang San to the ground. Tang San lost, and Xiao Wu became the new leader. Medium shot, low-angle shot.",
+        "Daytime, inside Dormitory Seven, dormitory room, neatly arranged beds, a few old posters on the wall, sunlight streaming through the curtains, slightly old but tidy, a slightly awkward atmosphere. Xiao Wu sits on the bed next to Tang San, expression mischievous, smiling slightly. Tang San sits on his own bed, looking slightly embarrassed, his head slightly lowered. Xiao Wu chose to sleep next to Tang San and suggested they share a quilt. Although Tang San felt a bit awkward, he agreed. Close up, eye level shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

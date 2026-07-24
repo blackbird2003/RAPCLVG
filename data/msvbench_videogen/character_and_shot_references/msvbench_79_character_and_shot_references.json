@@ -1,0 +1,274 @@
+{
+  "story_name": "msvbench_79_character_and_shot_references",
+  "story_overview": "MSVBench story 79 (Modern Romance). Having just gained fame from a period drama, my company immediately arranged for me to participate in a variety show, recording alongside three male and three female celebrities. During my toughest moments, Song Yuchen stayed by my side, offering encouragement and support. Then, I turned and left, filled with reluctance and hope.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "79",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, variety show recording set, lively atmosphere, background featuring a large stage and audience seating, various lighting equipment, busy staff members, bright lighting effects. Jing Lan stands at the center of the stage, looking slightly nervous, with her hands slightly clenched, her eyes scanning the surroundings. Having just gained fame from a period drama, my company immediately arranged for me to participate in a variety show, recording alongside three male and three female celebrities. Full shot, eye level shot.",
+        "Daytime, backstage of the variety show recording, bustling atmosphere, makeup room filled with cosmetics and costumes, posters hanging on the walls, soft lighting effects. Jing Lan sits in front of a makeup mirror, looking surprised. Wu Zheng stands to her left, smiling and greeting her. Song Yuchen adjusts his costume on the right, while Yang Yu leans against the doorway, his expression cold. The three male stars turned out to be my childhood friend Wu Zheng, my popular drama co-star Song Yuchen, and my secret boyfriend of three years, Yang Yu. Medium shot, eye level shot.",
+        "Daytime, live broadcast control room, tense atmosphere, large screens on the walls displaying netizens' comments, staff members intently watching the screens and typing quickly, intense lighting effects. The screen scrolls with various speculative and aggressive comments, the staff members looking tense. The live broadcast instantly exploded with various speculations and attacks. Medium close up, high-angle shot.",
+        "Nighttime, city streets, serene atmosphere, few pedestrians under the streetlights, distant skyscrapers twinkling with lights, soft yellow lighting effects. Jing Lan and Yang Yu walk side by side on the street, Jing Lan looking gentle, Yang Yu appearing cold and stern, the two maintaining a certain distance. Yang Yu and I fell in love while working together, but for the sake of his career, we kept our relationship secret. Medium shot, side shot.",
+        "Nighttime, Jing Lan's apartment, lonely atmosphere, living room scattered with magazines and scripts, city nightscape visible outside the window, dim lighting effects. Jing Lan sits on the sofa, looking despondent, holding a phone in her hand, the screen displaying negative comments. As he became more famous, our relationship grew distant. Six months ago, we were photographed by paparazzi, and I suffered online harassment while he chose to remain silent. Close up, eye level shot.",
+        "Daytime, variety show recording set, lively atmosphere, Yang Yu and Jiao Jiao interacting on stage, fans cheering in the audience, bright lighting effects. Jing Lan stands on the side of the stage, looking conflicted as she watches Yang Yu and Jiao Jiao interact, Yang Yu smiling while talking to Jiao Jiao. During this variety show, our relationship became the focus again, and he frequently interacted with his new co-star Jiao Jiao, making me feel bitter. Medium long shot, high-angle shot.",
+        "Daytime, Jing Lan's apartment, tense atmosphere, computer screen in the living room displaying a social media page, sunny outside, bright lighting effects. Jing Lan sits in front of the computer, looking anxious, her finger hovering over the mouse, the screen showing the liked video and netizens' comments. Meanwhile, I accidentally liked a male streamer's video and was dragged into another wave of online gossip. Close up, eye level shot.",
+        "Evening, city park, serene atmosphere, a bench beside a large tree, leaves rustling in the wind, golden sunset light spilling on the ground, soft golden lighting effects. Jing Lan and Song Yuchen sit on the bench, Song Yuchen looking concerned as he lightly pats Jing Lan's shoulder, Jing Lan slightly lowering her head, appearing somewhat relieved. During my toughest moments, Song Yuchen stayed by my side, offering encouragement and support. Medium shot, side shot.",
+        "Nighttime, rooftop of the variety show recording set, quiet atmosphere, dazzling city nightscape in the distance, gentle breeze, dim lighting effects. Jing Lan and Song Yuchen stand at the edge of the rooftop, Jing Lan looking lost, Song Yuchen appearing calm, the two standing side by side, gazing into the distance. Song Yuchen was leaving the variety show to film a drama, and I felt lost. Full shot, low-angle shot.",
+        "Nighttime, stairwell of the variety show recording set, dim atmosphere, faint light from the emergency lights on the walls, the stairwell quiet and empty, soft blue lighting effects. Song Yuchen holds Jing Lan's hand, looking serious, Jing Lan appearing surprised, taking a slight step back. The day before I left, we chatted on the rooftop. Song Yuchen suddenly pulled me into the stairwell and confessed, hoping I would leave with him. Medium close up, eye level shot.",
+        "Nighttime, stairwell of the variety show recording set, dim atmosphere, faint light from the emergency lights on the walls, the stairwell quiet and empty, soft blue lighting effects. Jing Lan looks determined, slightly shaking her head, her eyes filled with resolve. But I refused—I didn’t want to give up my career for love. Close up, eye level shot.",
+        "Nighttime, rooftop of the variety show recording set, quiet atmosphere, dazzling city nightscape in the distance, gentle breeze, dim lighting effects. Jing Lan hands Song Yuchen a note, Song Yuchen accepting it with a complicated expression, Jing Lan smiling faintly. In the end, I gave Song Yuchen a note with my long-standing motto written on it. Medium shot, eye level shot.",
+        "Nighttime, rooftop of the variety show recording set, quiet atmosphere, dazzling city nightscape in the distance, gentle breeze, dim lighting effects. Jing Lan looks determined, her eyes filled with anticipation, slightly raising her head to gaze into the distance. I hope we can meet at the peak. Close up, eye level shot.",
+        "Nighttime, rooftop of the variety show recording set, quiet atmosphere, dazzling city nightscape in the distance, gentle breeze, dim lighting effects. Jing Lan turns and walks away from the rooftop, her back firm, the breeze lightly tousling her hair, the city nightscape still dazzling in the distance. Then, I turned and left, filled with reluctance and hope. Full shot, back shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_00.png",
+            "label": "shot_00",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Wu_Zheng/merge.jpg",
+            "label": "Wu Zheng",
+            "guidance": "这张图片是角色Wu Zheng的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 24 years old, with regular features and a sunny disposition. He dresses casually, mostly in sportswear, giving off a friendly and approachable feeling."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Song_Yuchen/merge.jpg",
+            "label": "Song Yuchen",
+            "guidance": "这张图片是角色Song Yuchen的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with delicate features, especially his peach blossom eyes that leave a deep impression. He dresses casually, mostly in jeans and T-shirts, occasionally wearing costumes from his roles, giving off a sunny and handsome vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Yang_Yu/merge.jpg",
+            "label": "Yang Yu",
+            "guidance": "这张图片是角色Yang Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with a cold and stern expression, exuding an aloof demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_01.png",
+            "label": "shot_01",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_02.png",
+            "label": "shot_02",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Yang_Yu/merge.jpg",
+            "label": "Yang Yu",
+            "guidance": "这张图片是角色Yang Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with a cold and stern expression, exuding an aloof demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_03.png",
+            "label": "shot_03",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_04.png",
+            "label": "shot_04",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Yang_Yu/merge.jpg",
+            "label": "Yang Yu",
+            "guidance": "这张图片是角色Yang Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with a cold and stern expression, exuding an aloof demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jiao_Jiao/merge.jpg",
+            "label": "Jiao Jiao",
+            "guidance": "这张图片是角色Jiao Jiao的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a charming and lively appearance. She dresses fashionably, often in short skirts, exuding a youthful and energetic vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_05.png",
+            "label": "shot_05",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_06.png",
+            "label": "shot_06",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Song_Yuchen/merge.jpg",
+            "label": "Song Yuchen",
+            "guidance": "这张图片是角色Song Yuchen的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with delicate features, especially his peach blossom eyes that leave a deep impression. He dresses casually, mostly in jeans and T-shirts, occasionally wearing costumes from his roles, giving off a sunny and handsome vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_07.png",
+            "label": "shot_07",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Song_Yuchen/merge.jpg",
+            "label": "Song Yuchen",
+            "guidance": "这张图片是角色Song Yuchen的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with delicate features, especially his peach blossom eyes that leave a deep impression. He dresses casually, mostly in jeans and T-shirts, occasionally wearing costumes from his roles, giving off a sunny and handsome vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_08.png",
+            "label": "shot_08",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Song_Yuchen/merge.jpg",
+            "label": "Song Yuchen",
+            "guidance": "这张图片是角色Song Yuchen的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with delicate features, especially his peach blossom eyes that leave a deep impression. He dresses casually, mostly in jeans and T-shirts, occasionally wearing costumes from his roles, giving off a sunny and handsome vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_09.png",
+            "label": "shot_09",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_10.png",
+            "label": "shot_10",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Song_Yuchen/merge.jpg",
+            "label": "Song Yuchen",
+            "guidance": "这张图片是角色Song Yuchen的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A male actor with black hair and black eyes, around 25 years old, with delicate features, especially his peach blossom eyes that leave a deep impression. He dresses casually, mostly in jeans and T-shirts, occasionally wearing costumes from his roles, giving off a sunny and handsome vibe."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_11.png",
+            "label": "shot_11",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_12.png",
+            "label": "shot_12",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/79/Jing_Lan/merge.jpg",
+            "label": "Jing Lan",
+            "guidance": "这张图片是角色Jing Lan的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young actress with black hair and black eyes, in her early 20s, with a pure and lovely appearance. She dresses in a simple and stylish manner, often appearing in casual wear or the costumes of her roles, exuding a fresh and natural charm."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/79/shot_13.png",
+            "label": "shot_13",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "story_name": "msvbench_27_character_and_shot_references",
+  "story_overview": "MSVBench story 27 (Horror). As usual, Li Shiqing fell asleep on the bus. Upon 'waking up' for the third time, Li Shiqing realized something was wrong. Li Shiqing stared ahead, ready to face the next challenge.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "27",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, her head resting against it, her expression peaceful with closed eyes, a backpack placed on her lap. As usual, Li Shiqing fell asleep on the bus. Full shot, eye level shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing slightly opens her eyes, her expression somewhat dazed, her hand reaching into her pocket as the Canon ringtone plays from it. Suddenly, she was awakened by the sound of a Canon ringtone. Medium close up, eye level shot.",
+        "Daytime, inside the bus, a chaotic atmosphere, panicked passengers, items scattered everywhere, strong sunlight streaming through the windows. Li Shiqing leans forward, her expression terrified, her hands attempting to grasp the handrail in front of her but failing, her head hitting the seat in front as she faints. However, the bus suddenly experienced a violent collision, and she promptly fainted. Medium shot, low-angle shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, slowly opening her eyes, her expression confused as she looks around—everything appears normal. When she woke up, everything seemed perfectly normal. Full shot, eye level shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing's expression is tense as her hand reaches into her pocket again; the Canon ringtone plays once more, her eyes widening in terror. But when that damned phone rang again, the nightmare returned once more. Medium close up, eye level shot.",
+        "Daytime, inside the bus, a chaotic atmosphere, panicked passengers, items scattered everywhere, strong sunlight streaming through the windows. The bus takes a sharp turn; passengers scream as they are thrown from their seats. Li Shiqing loses her balance, her expression terrified as she tries to grab an outstretched hand nearby. The bus made a sharp turn, passengers screamed as they were thrown from their seats, and Li Shiqing was no exception. Medium shot, low-angle shot.",
+        "Daytime, inside the bus, a chaotic atmosphere, panicked passengers, items scattered everywhere, strong sunlight streaming through the windows. Li Shiqing's hand flails in the air, attempting to grab the nearby handrail but failing; the back of her head hits the ground hard, her expression pained as her eyes close. She tried to grab a nearby handrail but failed, her head hitting the ground hard. Close up, eye level shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, slowly opening her eyes, her expression confused and solemn, her hand clutching her head as if recalling the previous 'nightmare'. Upon 'waking up' for the third time, Li Shiqing realized something was wrong. Full shot, eye level shot.",
+        "Daytime, inside the bus, a tense atmosphere, passengers watching Li Shiqing curiously, flowing city scenery outside the window, soft natural lighting. Li Shiqing stands next to the driver, her expression anxious, her hand gripping his seat. The Bus Driver Uncle turns his head, his expression hesitant as he shakes it slightly. She tried to get the driver to stop, but he refused, fearing an accident if he stopped outside a designated stop. Medium shot, eye level shot.",
+        "Daytime, inside the bus, a chaotic atmosphere, panicked passengers, items scattered everywhere, strong sunlight streaming through the windows. The Canon ringtone plays again; Li Shiqing's expression is terrified as the bus suddenly takes a sharp turn. Passengers scream as they are thrown from their seats, and Li Shiqing is no exception. Just then, the phone rang again, and the bus met with another accident. Medium shot, low-angle shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, her expression resolute, her hand clutching her chest as she feigns weakness, slowly standing up. Upon waking for the fourth time, she decided to act like a 'suddenly ill' weak girl to get the driver to stop. Full shot, eye level shot.",
+        "Daytime, inside the bus, a tense atmosphere, passengers watching Li Shiqing curiously, flowing city scenery outside the window, soft natural lighting. Li Shiqing stands next to the driver, her expression weak, her hand resting on his seat. The Bus Driver Uncle turns his head, his expression hesitant, but he eventually nods. The driver hesitated but eventually agreed. Medium shot, eye level shot.",
+        "Daytime, inside the bus, a chaotic atmosphere, panicked passengers, items scattered everywhere, strong sunlight streaming through the windows. The bus is about to stop when the Canon ringtone plays again. Li Shiqing's expression is terrified as the bus suddenly takes a sharp turn. Passengers scream as they are thrown from their seats, and Li Shiqing is no exception. However, just as the bus was about to stop, the dreadful phone rang again, and the bus met with another accident. Medium shot, low-angle shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, her expression resolute and unwilling to concede, her hands clenched into fists, her eyes filled with determination. Li Shiqing refused to give up. She vowed that next time, she would hold onto something tightly to avoid getting hurt again. Close up, eye level shot.",
+        "Daytime, inside the bus, a quiet atmosphere, scattered passengers in their seats, flowing city scenery outside the window, soft natural lighting. Li Shiqing sits by the window, leaning slightly forward, her expression focused and determined, her hands gripping the handrail tightly, ready to face the next challenge. Li Shiqing stared ahead, ready to face the next challenge. Medium close up, eye level shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_00.png",
+            "label": "shot_00",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_01.png",
+            "label": "shot_01",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_02.png",
+            "label": "shot_02",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_03.png",
+            "label": "shot_03",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_04.png",
+            "label": "shot_04",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_05.png",
+            "label": "shot_05",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_06.png",
+            "label": "shot_06",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_07.png",
+            "label": "shot_07",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Bus_Driver_Uncle/merge.jpg",
+            "label": "Bus Driver Uncle",
+            "guidance": "这张图片是角色Bus Driver Uncle的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged man in his 40s with graying hair, medium build, and a kind face. His hair is somewhat thinning, and he wears the uniform of a bus driver—a blue shirt."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_08.png",
+            "label": "shot_08",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_09.png",
+            "label": "shot_09",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_10.png",
+            "label": "shot_10",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Bus_Driver_Uncle/merge.jpg",
+            "label": "Bus Driver Uncle",
+            "guidance": "这张图片是角色Bus Driver Uncle的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A middle-aged man in his 40s with graying hair, medium build, and a kind face. His hair is somewhat thinning, and he wears the uniform of a bus driver—a blue shirt."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_11.png",
+            "label": "shot_11",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_12.png",
+            "label": "shot_12",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_13.png",
+            "label": "shot_13",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/27/Li_Shiqing/merge.jpg",
+            "label": "Li Shiqing",
+            "guidance": "这张图片是角色Li Shiqing的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young Chinese female university student with black hair and black eyes, approximately 20 years old, fair-skinned with delicate features. She has long black hair and wears simple university attire—a blue denim shirt paired with jeans."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/27/shot_14.png",
+            "label": "shot_14",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ]
+      ]
+    }
+  ]
+}

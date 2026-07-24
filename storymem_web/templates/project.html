@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}{{ project.name }} · StoryMem{% endblock %}
+{% block content %}
+<section class="project-toolbar">
+  <div>
+    <a class="back-link" href="/"><i data-lucide="arrow-left"></i>Projects</a>
+    <form class="project-name-form" method="post" action="/projects/{{ project.project_id }}/rename">
+      <input aria-label="Project name" name="name" value="{{ project.name }}" maxlength="160" required>
+      <button class="icon-button" type="submit" title="Rename project"><i data-lucide="save"></i></button>
+    </form>
+    <div class="meta-line">
+      <span class="status status-{{ project.status }}">{{ project.status }}</span>
+      <span>{{ project.completed_count }} / {{ project.shot_count }} complete</span>
+      <span>{{ project.generation_config.resolution }}</span>
+      <span>{{ project.generation_config.ratio }}</span>
+    </div>
+  </div>
+  <div class="toolbar-actions">
+    {% if project.active_job %}
+    <form method="post" action="/projects/{{ project.project_id }}/interrupt">
+      <button class="icon-button danger" type="submit" title="Interrupt project"><i data-lucide="square"></i></button>
+    </form>
+    {% elif project.completed_count < project.shot_count %}
+    <button class="button" type="button" data-save-all disabled><i data-lucide="save"></i>Save all</button>
+    <form method="post" action="/projects/{{ project.project_id }}/run">
+      <button class="button primary" data-run-action type="submit"><i data-lucide="play"></i>Run all</button>
+    </form>
+    {% endif %}
+  </div>
+</section>
+
+<form class="project-settings-form" method="post" action="/projects/{{ project.project_id }}/settings">
+  <div class="settings-field">
+    <label class="field-label" for="pipeline-version">Pipeline</label>
+    <select id="pipeline-version" name="pipeline_version" {% if project.active_job %}disabled{% endif %}>
+      <option value="classic" {% if project.generation_config.pipeline_version == 'classic' %}selected{% endif %}>Classic</option>
+      <option value="visual_element_v1" {% if project.generation_config.pipeline_version == 'visual_element_v1' %}selected{% endif %}>Visual Element Memory v1</option>
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="visual-sink-count">Sink frame count</label>
+    <input id="visual-sink-count" type="number" min="0" max="9" step="1" name="visual_element_sink_frame_count" value="{{ project.generation_config.visual_element_sink_frame_count }}" {% if project.active_job %}disabled{% endif %}>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="visual-retrieved-count">Max retrieved historical frames</label>
+    <input id="visual-retrieved-count" type="number" min="0" max="9" step="1" name="visual_element_max_retrieved_frames" value="{{ project.generation_config.visual_element_max_retrieved_frames }}" {% if project.active_job %}disabled{% endif %}>
+  </div>
+  <button class="button small" type="submit" {% if project.active_job %}disabled{% endif %}><i data-lucide="settings"></i>Save settings</button>
+</form>
+
+<div class="notebook" data-project-id="{{ project.project_id }}">
+  {% for shot in project.shots %}
+  <section class="shot-block" id="{{ shot.shot_id }}">
+    <div class="shot-label">
+      <span class="execution-index">{{ "%02d"|format(shot.order_index + 1) }}</span>
+      <div><span>Scene {{ shot.scene_num }}</span><strong>Shot {{ shot.shot_num }}</strong></div>
+    </div>
+    <form class="shot-inputs" data-shot-form data-has-previous="{{ 'true' if shot.order_index > 0 else 'false' }}" method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}">
+      <input type="hidden" name="row_version" value="{{ shot.row_version }}">
+      <div class="shot-field">
+        <label class="field-label" for="prompt-{{ shot.shot_id }}">Video prompt</label>
+        <textarea id="prompt-{{ shot.shot_id }}" name="video_prompt" rows="5" {% if not shot.can_edit %}disabled{% endif %}>{{ shot.video_prompt }}</textarea>
+      </div>
+      <div class="shot-field compact-field">
+        <span class="field-label">Cut</span>
+        <label class="switch-control">
+            <input type="checkbox" name="is_cut" data-cut-toggle {% if shot.is_cut %}checked{% endif %} {% if not shot.can_edit %}disabled{% endif %}>
+            <span class="switch-track" aria-hidden="true"></span>
+            <span data-switch-value>{{ "On" if shot.is_cut else "Off" }}</span>
+        </label>
+      </div>
+      <div class="shot-field compact-field generation-mode-field{% if shot.is_cut or shot.order_index == 0 %} is-disabled{% endif %}">
+        <label class="field-label" for="mode-{{ shot.shot_id }}">Generation mode</label>
+        <select id="mode-{{ shot.shot_id }}" name="generation_mode" data-generation-mode {% if not shot.can_edit or shot.is_cut or shot.order_index == 0 %}disabled{% endif %}>
+          <option value="default" {% if shot.generation_mode == 'default' %}selected{% endif %}>Default</option>
+          <option value="last_frame_only" {% if shot.generation_mode == 'last_frame_only' %}selected{% endif %}>Last frame only</option>
+          <option value="smooth" {% if shot.generation_mode == 'smooth' %}selected{% endif %}>Smooth</option>
+        </select>
+      </div>
+      <div class="shot-field compact-field">
+        <label class="field-label" for="duration-{{ shot.shot_id }}">Generation duration</label>
+        <div class="duration-control">
+          <input id="duration-{{ shot.shot_id }}" type="number" name="duration_seconds" value="{{ shot.duration_seconds }}" min="2" max="15" step="1" required {% if not shot.can_edit %}disabled{% endif %}>
+          <span>seconds</span>
+        </div>
+      </div>
+      {% if project.generation_config.pipeline_version == 'classic' %}
+      <div class="shot-field compact-field">
+        <span class="field-label">Memory sources</span>
+        <div class="memory-switches">
+          <label class="switch-control">
+            <input type="checkbox" name="memory_sink" {% if shot.memory_sink %}checked{% endif %} {% if not shot.can_edit %}disabled{% endif %}>
+            <span class="switch-track" aria-hidden="true"></span><span>Sink</span>
+          </label>
+          <label class="switch-control">
+            <input type="checkbox" name="memory_retrieve" {% if shot.memory_retrieve %}checked{% endif %} {% if not shot.can_edit %}disabled{% endif %}>
+            <span class="switch-track" aria-hidden="true"></span><span>Retrieve</span>
+          </label>
+          <label class="switch-control">
+            <input type="checkbox" name="memory_recent" {% if shot.memory_recent %}checked{% endif %} {% if not shot.can_edit %}disabled{% endif %}>
+            <span class="switch-track" aria-hidden="true"></span><span>Recent</span>
+          </label>
+        </div>
+      </div>
+      {% endif %}
+      <div class="shot-form-actions">
+        <button class="button small" type="submit" {% if not shot.can_edit %}disabled{% endif %}><i data-lucide="save"></i>Save</button>
+      </div>
+    </form>
+    {% include "fragments/shot_runtime.html" %}
+  </section>
+  {% endfor %}
+</div>
+
+{% include "fragments/project_summary.html" %}
+{% endblock %}

@@ -1,0 +1,293 @@
+{
+  "story_name": "msvbench_24_character_reference",
+  "story_overview": "MSVBench story 24 (Classics for Women). Christmas is approaching, but the four March sisters, due to their poverty, cannot look forward to gifts like other children. In the evening, the sisters gather around the fireplace, doing needlework. Narration: On Christmas morning, sunlight streams through the window, illuminating the sisters' faces as they wake to find small gifts left by their mother at their bedsides, their hearts brimming with gratitude and joy.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "24",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, the March family's living room, with old furniture, a clock on the mantel, snow falling outside the window, and faint sunlight streaming through the window onto the floor, creating a serene yet slightly melancholic atmosphere. Meg sits on an old sofa, her hands touching her worn-out dress, looking disappointed; Jo lies on the carpet with her arms crossed, frowning; Beth sits by the piano, her fingers lightly touching the keys, her gaze gentle yet tinged with sadness; Amy stands by the window, watching the falling snow outside, her expression complex. Christmas is approaching, but the four March sisters, due to their poverty, cannot look forward to gifts like other children. Full shot, eye level shot.",
+        "Daytime, the March family's living room, an old sofa, a clock on the mantel, faint sunlight streaming through the window onto the floor, creating a serene yet slightly melancholic atmosphere. Meg sits on the old sofa, her hands touching her old dress, her eyes revealing a hint of resignation and longing as she sighs softly. The eldest sister Meg sighs as she looks at her old clothes. Medium close up, eye level shot.",
+        "Daytime, the March family's living room, a carpet, a clock on the mantel, faint sunlight streaming through the window onto the floor. Jo lies on the carpet, her arms crossed, frowning and muttering something under her breath, her expression showing irritation and discontent. The second sister Jo lies on the carpet, complaining about how difficult it is to spend Christmas without gifts. Medium shot, eye level shot.",
+        "Daytime, the March family's living room, a piano, a clock on the mantel, faint sunlight streaming through the window onto the floor. Beth sits by the piano, her fingers lightly touching the keys, her gaze gentle yet tinged with sadness, her head slightly bowed as if deep in thought. The third sister Beth feels that having family is enough, but she is still saddened by her inability to buy a gift for their mother. Medium close up, eye level shot.",
+        "Daytime, the March family's living room, by the window, snow falling outside, faint sunlight streaming through the window onto the floor. Amy stands by the window, her hands resting on the windowsill as she watches the falling snow outside, her eyes revealing a hint of jealousy and longing, her lips slightly downturned. The youngest sister Amy is filled with envy for the girls from wealthy families. Medium shot, eye level shot.",
+        "Evening, the March family's living room, a dining table, candlelight, a clock on the mantel, snow still falling outside the window. The sisters gather around the dining table, each with a dollar in front of them, their expressions varied; Mrs. March stands behind them, her hands resting on their shoulders, her eyes filled with love and expectation. Each sister has only one dollar, which they originally planned to spend on something they liked, but their mother suggests they donate the money to soldiers suffering on the battlefield. Full shot, eye level shot.",
+        "Evening, the March family's living room, a dining table, candlelight, a clock on the mantel, snow still falling outside the window. The sisters gather around the dining table, looking at one another, their expressions shifting from initial reluctance to understanding and determination. Meg nods slightly, Jo clenches her fists, Beth smiles gently, and Amy's eyes sparkle with inspiration. Though reluctant, the sisters understand their mother's intention. They begin discussing how to use the money to buy a Christmas gift for their mother and decide to each prepare a small surprise for her. Medium shot, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces, creating a warm and peaceful atmosphere. The sisters sit around the fireplace, each holding needlework. Meg sews intently, Jo occasionally glances at the others, Beth works quietly, and Amy, though slightly clumsy, remains focused. In the evening, the sisters gather around the fireplace, doing needlework. Full shot, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces. Mrs. March stands at the doorway of the living room, holding a letter in her hand, a warm smile on her face, her eyes shining with emotion and anticipation. When their mother returns home, she brings them a letter from their father. Medium shot, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces. The sisters sit around the fireplace, holding their father's letter, their expressions focused and moved. Meg's eyes are slightly red, Jo presses her lips together, Beth wipes away a tear, and Amy clutches the letter tightly. In the letter, their father encourages them to be strong and brave, saying that though it will be a year before he returns, he will always miss and pray for them. Medium close up, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces. The sisters look at one another, their eyes filled with resolve and determination. Meg nods slightly, Jo clenches her fists, Beth smiles gently, and Amy's eyes sparkle with inspiration. Deeply touched by their father's letter, the sisters resolve to improve themselves and not disappoint him when he returns. Medium shot, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces. Mrs. March sits among her daughters, holding a copy of 'The Pilgrim's Progress,' her eyes filled with wisdom and love, her voice gentle yet firm. Their mother uses the game 'The Pilgrim's Progress,' which they loved as children, to metaphorically describe their current lives, telling them that everyone has their own burdens to bear, but as long as they pursue goodness and happiness, they can overcome hardships and reach 'the Celestial City.'. Medium close up, eye level shot.",
+        "Night, the March family's living room, a fireplace, a clock on the mantel, the faint glow of the fire illuminating their faces. The sisters sit around the fireplace, their expressions focused and resolute. Meg nods slightly, Jo clenches her fists, Beth smiles gently, and Amy's eyes sparkle with inspiration. Inspired, the sisters resolve to wholeheartedly strive not to disappoint their father when he returns. Medium shot, eye level shot.",
+        "Night, the March family's bedroom, four beds, snow still falling outside the window, faint moonlight streaming through the window onto the floor, creating a peaceful and warm atmosphere. The sisters lie in their beds, their expressions serene and expectant. Mrs. March stands by their beds, softly singing a lullaby, her eyes filled with love and warmth. Finally, the sisters drift off to sleep to the sound of their mother's lullaby, eagerly awaiting Christmas morning. Full shot, eye level shot.",
+        "Morning, the March family's bedroom, four beds, the snow outside has stopped, bright sunlight streams through the window onto the floor, creating a warm and joyful atmosphere. On each of the four beds, a small gift rests by the sisters' pillows, filling them with delight. Sunlight bathes their faces, creating a serene and heartwarming scene. Narration: On Christmas morning, sunlight streams through the window, illuminating the sisters' faces as they wake to find small gifts left by their mother at their bedsides, their hearts brimming with gratitude and joy. Full shot, eye level shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Mrs._March/merge.jpg",
+            "label": "Mrs. March",
+            "guidance": "这张图片是角色Mrs. March的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A mother in her forties, tall, with short golden hair and blue eyes, radiating maternal warmth. She dresses plainly but carries herself with grace."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Mrs._March/merge.jpg",
+            "label": "Mrs. March",
+            "guidance": "这张图片是角色Mrs. March的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A mother in her forties, tall, with short golden hair and blue eyes, radiating maternal warmth. She dresses plainly but carries herself with grace."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Mrs._March/merge.jpg",
+            "label": "Mrs. March",
+            "guidance": "这张图片是角色Mrs. March的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A mother in her forties, tall, with short golden hair and blue eyes, radiating maternal warmth. She dresses plainly but carries herself with grace."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Meg/merge.jpg",
+            "label": "Meg",
+            "guidance": "这张图片是角色Meg的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A sixteen-year-old American girl, pretty and plump, with fair skin, thick brown hair, brown eyes, and delicate white hands."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Jo/merge.jpg",
+            "label": "Jo",
+            "guidance": "这张图片是角色Jo的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A fifteen-year-old American girl with brown hair and a tall, slender frame. She has a strong-willed personality and can sometimes appear rough."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Beth/merge.jpg",
+            "label": "Beth",
+            "guidance": "这张图片是角色Beth的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A thirteen-year-old American girl with long, golden curls, rosy cheeks, and glossy hair. She is shy and quiet by nature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Amy/merge.jpg",
+            "label": "Amy",
+            "guidance": "这张图片是角色Amy的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A twelve-year-old American girl, sweet and adorable, with golden eyes and golden ringlets."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/24/Mrs._March/merge.jpg",
+            "label": "Mrs. March",
+            "guidance": "这张图片是角色Mrs. March的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A mother in her forties, tall, with short golden hair and blue eyes, radiating maternal warmth. She dresses plainly but carries herself with grace."
+          }
+        ],
+        []
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+models/
+models
+.runtime/
+results*/
+log.txt
+**pycache**/
+.DS_Store
+paper/
+test/
+docs/references/

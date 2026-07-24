@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}StoryMem{% endblock %}</title>
+    <link rel="stylesheet" href="/static/app.css?v=20260624-memory-switches">
+    <script src="/static/vendor/htmx.min.js" defer></script>
+    <script src="/static/vendor/lucide.min.js" defer></script>
+    <script src="/static/app.js?v=20260624-memory-switches" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <a class="brand" href="/">StoryMem</a>
+      <span class="environment">Seedance notebook</span>
+    </header>
+    <main class="page-shell">
+      {% if error %}<div class="alert alert-error">{{ error }}</div>{% endif %}
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

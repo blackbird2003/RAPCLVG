@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "${ROOT_DIR}"
+
+command="${1:-status}"
+shift || true
+case "${command}" in
+  status)
+    source ./storymem_env.sh
+    exec python tools/storymem_status.py "$@"
+    ;;
+  web)
+    exec ./manage_storymem_web.sh "$@"
+    ;;
+  *)
+    echo "Usage: ./storymem {status [options]|web {start|stop|restart|status|logs}}" >&2
+    exit 2
+    ;;
+esac

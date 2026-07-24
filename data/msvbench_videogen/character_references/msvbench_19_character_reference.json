@@ -1,0 +1,372 @@
+{
+  "story_name": "msvbench_19_character_reference",
+  "story_overview": "MSVBench story 19 (African Picture Book Stories). In the bustling city of Nairobi, a group of homeless boys struggle to survive every day. One early morning, the boys wake up on the cold sidewalks, folding the blankets they used for sleeping. One day, while Magwe was sitting on the sidewalk reading his storybook, Thomas came over and sat beside him. Thomas asked, 'What story does this book tell?' Magwe replied, 'It’s about a boy who becomes a pilot.' Thomas asked again, 'What’s the boy’s name?' Magwe grinned: 'His name is Magwe.'",
+  "source_dataset": "MSVBench",
+  "source_story_id": "19",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning, Nairobi city streets, chilly atmosphere, scattered blankets on the sidewalk, distant skyscrapers, faint morning light. Blankets are scattered on the sidewalk, with Nairobi's skyscrapers in the distance, faint morning light casting on the ground. In the bustling city of Nairobi, a group of homeless boys struggle to survive every day. One early morning, the boys wake up on the cold sidewalks, folding the blankets they used for sleeping. Wide shot, eye level shot.",
+        "Early morning, Nairobi city streets, chilly atmosphere, a fire burning on the sidewalk, scattered trash around, faint morning light. A fire burns in the middle of the sidewalk, surrounded by scattered trash, flames flickering in the faint morning light. To ward off the cold, they light a fire with collected trash. Medium shot, eye level shot.",
+        "Early morning, Nairobi city streets, chilly atmosphere, a fire burning on the sidewalk, scattered trash around, faint morning light. Magwe sits by the fire, his expression solemn, hands warming near the flames, wearing a worn-out T-shirt and shorts. Among the boys, there is one named Magwe. Magwe lost his parents at the age of five and was forced to live with his uncle. Close up, eye level shot.",
+        "Daytime, uncle's yard, oppressive atmosphere, dilapidated house, scattered items in the yard, strong sunlight. Magwe works in the yard, looking exhausted, while his uncle stands nearby, stern-faced, hands on hips, eyes cold. However, his uncle showed no care for him, making him starve and freeze while forcing him to do heavy labor. Whenever Magwe complained slightly, his uncle would beat him. Medium shot, side shot.",
+        "Daytime, uncle's yard, oppressive atmosphere, dilapidated house, scattered items in the yard, strong sunlight. Magwe lowers his head, looking scared, while his uncle stands before him, angry, raising his right hand to strike. Once, Magwe gathered the courage to ask his uncle if he could go to school, only to be beaten severely. His uncle mocked him, saying, 'You fool, what do you need school for?'. Close up, front shot.",
+        "Nighttime, Nairobi city streets, lonely atmosphere, dim streetlights, empty streets, faint moonlight. Magwe's small figure walks on the empty street, his back appearing lonely and helpless, dim streetlights lining the sides of the road. After three years of living in such conditions, Magwe could no longer bear it and chose to run away, beginning his life as a homeless child. Wide shot, back shot.",
+        "Daytime, Nairobi city streets, busy atmosphere, pedestrians coming and going, roadside trash bins, strong sunlight. Magwe rummages through a trash bin by the roadside, focused, while pedestrians pass by, ignoring him. Life on the streets was extremely tough, and the boys could barely feed themselves each day. They often faced the danger of being caught or beaten, and when sick, no one cared for them. Medium shot, eye level shot.",
+        "Daytime, Nairobi city streets, busy atmosphere, roadside stalls, scattered plastic items and second-hand goods, strong sunlight. Magwe stands by a roadside stall, looking anxious, the stall displaying plastic items and second-hand goods, the street bustling around him. They earned meager income by begging and selling plastic items and second-hand goods. Sometimes, they had to fight other homeless people for territory, making life even harder. Full shot, eye level shot.",
+        "Daytime, Nairobi city streets, busy atmosphere, roadside trash bin, scattered garbage, strong sunlight. Magwe crouches by the trash bin, looking surprised, holding a tattered storybook, carefully blowing off the dust. One day, while rummaging through a trash bin, Magwe unexpectedly found a tattered storybook. He carefully blew off the dust and put the book in his bag. Close up, eye level shot.",
+        "Evening, Nairobi city streets, serene atmosphere, a corner of the sidewalk, distant sunset, soft light. Magwe sits on the sidewalk, focused, flipping through the storybook, the evening sun casting its glow on him. After begging each day, he would take out the book and look at the pictures, though he couldn’t read the words. The book told the story of a boy who grew up to become a pilot, and Magwe often fantasized about becoming like him. Medium close up, eye level shot.",
+        "Daytime, Nairobi city streets, chilly atmosphere, roadside beggars, distant blue-roofed, yellow-walled house, strong sunlight. Magwe stands by the roadside begging, looking hesitant, while Thomas stands before him, friendly, pointing toward the distant blue-roofed, yellow-walled house. On a cold day, while begging on the street, a man named Thomas approached him and said kindly, 'Hello, my name is Thomas. I work nearby. You can go to the blue-roofed, yellow-walled house over there for some food.'. Medium shot, eye level shot.",
+        "Daytime, Nairobi city streets, chilly atmosphere, roadside beggars, distant blue-roofed, yellow-walled house, strong sunlight. Magwe glances sideways at Thomas and the distant house, looking hesitant, then turns to walk away. Magwe hesitantly looked at the man and the house, then walked away. Close up, side shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Thomas sits on a bench in the yard, looking gentle, surrounded by homeless boys, all sitting together and talking. Over the next few months, the homeless boys gradually got to know Thomas. He enjoyed talking to people, especially the homeless. Thomas always listened patiently to their stories, respecting everyone. Full shot, eye level shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Magwe and some boys eat in the yard, while Thomas stands nearby, looking satisfied, watching the children. Gradually, some boys began going to the blue-roofed, yellow-walled house during the day for food. Medium shot, eye level shot.",
+        "Evening, Nairobi city streets, serene atmosphere, a corner of the sidewalk, distant sunset, soft light. Magwe and Thomas sit side by side on the sidewalk, Magwe holding the storybook, focused, while Thomas looks at him curiously. One day, while Magwe was sitting on the sidewalk reading his storybook, Thomas came over and sat beside him. Thomas asked, 'What story does this book tell?' Magwe replied, 'It’s about a boy who becomes a pilot.'. Medium close up, eye level shot.",
+        "Evening, Nairobi city streets, serene atmosphere, a corner of the sidewalk, distant sunset, soft light. Magwe lowers his head, looking embarrassed, while Thomas watches him gently, understanding in his eyes. Thomas asked again, 'What’s the boy’s name?' Magwe’s voice lowered: 'I don’t know. I can’t read.'. Close up, front shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Magwe sits on the bench, looking emotional, while Thomas sits beside him, listening intently. Later, Magwe told Thomas his story, including how his uncle treated him and how he ran away from home. Thomas didn’t say much, just listened carefully. Medium shot, side shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Magwe and Thomas eat and chat in the yard, surrounded by other homeless boys, all looking relaxed and happy. Sometimes, they would eat and chat in the blue-roofed, yellow-walled house. Full shot, eye level shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Thomas holds a new storybook, handing it to Magwe, who looks surprised, accepting it with both hands. On Magwe’s tenth birthday, Thomas gave him a new storybook about a village boy who became a football player. Close up, front shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Thomas looks at Magwe seriously, while Magwe lowers his head in thought, looking hesitant. Thomas told Magwe this story many times. One day, Thomas said to Magwe, 'I think you should go to school and learn to read. What do you think?'. Medium close up, eye level shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Thomas points into the distance, looking expectant, while Magwe follows his gaze, looking curious. Thomas told Magwe he knew a place where children could live and receive an education. Medium shot, eye level shot.",
+        "Nighttime, Nairobi city streets, lonely atmosphere, dim streetlights, empty streets, faint moonlight. Magwe’s small figure sits by the roadside, his back appearing lonely and helpless, dim streetlights lining the sides, moonlight casting over him. Magwe considered the possibility of moving to the new place and going to school, but he worried if he could really adapt. He feared that if his uncle was right and he was too stupid to learn, what then? What if he was hurt again in the new place? He was scared, thinking, 'Maybe I’m destined to sleep on the roadside.'. Wide shot, back shot.",
+        "Daytime, yard of the blue-roofed, yellow-walled house, warm atmosphere, benches in the yard, surrounding flowers and plants, soft sunlight. Magwe looks worried, while Thomas holds his hand, speaking gently, patiently guiding him. He shared these thoughts with Thomas. Thomas patiently guided him, eventually convincing Magwe that he would have a better life in the new place. Medium close up, eye level shot.",
+        "Daytime, yard of the new home, cozy atmosphere, green-roofed house, children playing in the yard, soft sunlight. Magwe stands in the yard of the new home, looking slightly nervous, children playing around him, the house with a green roof in the background. So, Magwe moved to the new home, which had a green roof. He shared a room with two other boys, and ten more children lived in the house. Full shot, eye level shot.",
+        "Daytime, yard of the new home, cozy atmosphere, green-roofed house, children and animals playing in the yard, soft sunlight. Magwe and Auntie Sisi stand in the yard, Auntie Sisi looking kind, children and animals playing around them. Living with them were Auntie Sisi and her husband, along with three dogs, a cat, and an old goat. Medium shot, eye level shot.",
+        "Daytime, classroom of the new home, studious atmosphere, blackboard on the wall, books on the desk, soft sunlight. Magwe sits at his desk, focused but slightly confused, holding a pen, an open book in front of him. Magwe began his learning journey, facing many difficulties, struggling to keep up with his classmates, sometimes almost wanting to give up. Medium close up, eye level shot.",
+        "Daytime, classroom of the new home, studious atmosphere, blackboard on the wall, books on the desk, soft sunlight. Magwe looks down at his book, determined, resolve shining in his eyes. But whenever he thought of the pilot and the football player from the storybooks, he would persevere, just like them. Close up, front shot.",
+        "Daytime, backyard of the new home, serene atmosphere, flowers and plants in the yard, book on the bench, soft sunlight. Magwe and Thomas sit side by side on the bench, Magwe holding the book, smiling, while Thomas looks at him curiously. One day, while reading a book in the backyard of the house, Thomas came and sat beside him. Thomas asked, 'What story does this book tell?' Magwe smiled and replied, 'It’s about a boy who becomes a teacher.'. Medium close up, eye level shot.",
+        "Daytime, backyard of the new home, serene atmosphere, flowers and plants in the yard, book on the bench, soft sunlight. Magwe looks at Thomas, grinning proudly, while Thomas watches him, pleased. Thomas asked again, 'What’s the boy’s name?' Magwe grinned: 'His name is Magwe.'. Close up, front shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [],
+        [],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe's_Uncle/merge.jpg",
+            "label": "Magwe's Uncle",
+            "guidance": "这张图片是角色Magwe's Uncle的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A burly African man, about forty years old, dark-skinned with a beard. He wears a gray long-sleeved T-shirt and blue pants, always appearing impatient and rough."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe's_Uncle/merge.jpg",
+            "label": "Magwe's Uncle",
+            "guidance": "这张图片是角色Magwe's Uncle的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A burly African man, about forty years old, dark-skinned with a beard. He wears a gray long-sleeved T-shirt and blue pants, always appearing impatient and rough."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Auntie_Sisi/merge.jpg",
+            "label": "Auntie Sisi",
+            "guidance": "这张图片是角色Auntie Sisi的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A kind-hearted black-haired, black-eyed middle-aged African woman, about forty years old, dark-skinned and slender, with curly black hair. She wears a green T-shirt and a white apron, with a pair of bright yellow pearl earrings, always with a warm smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Magwe/merge.jpg",
+            "label": "Magwe",
+            "guidance": "这张图片是角色Magwe的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed African boy, about ten years old, with dark skin and a thin but determined appearance. He wears a worn-out orange T-shirt and gray pants, barefoot."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/19/Thomas/merge.jpg",
+            "label": "Thomas",
+            "guidance": "这张图片是角色Thomas的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A black-haired, black-eyed middle-aged African man, about forty years old, tall and dark-skinned, with short hair and a full beard. He wears a neat white shirt and yellow pants, with leather shoes. Always with a gentle smile."
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "story_name": "msvbench_08_character_and_shot_references",
+  "story_overview": "MSVBench story 08 (Chinese Ancient Romance). Since childhood, I have been frail and sickly, my face as pale as paper, my body as slender as a willow, as if a gust of wind could knock me over. For days afterward, I collapsed each time from exhaustion. The Emperor, however, seemed amused, as if observing a diverting game. The next morning, I discovered the jade pendant the Emperor had left behind, and an indescribable emotion welled up inside me.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "08",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Early morning, the Jiang family courtyard. A gentle breeze rustles the leaves, and a clear pond lies at the center, surrounded by weeping willows. Sunlight filters through the leaves, casting dappled shadows. The air carries a faint floral fragrance. Consort Jiang stands by the pond, frail and pale. The breeze tousles her long hair as she gazes melancholically at the water. Since childhood, I have been frail and sickly, my face as pale as paper, my body as slender as a willow, as if a gust of wind could knock me over. Medium shot, eye level shot.",
+        "Dusk, outside the Jiang residence gate. A carriage waits, servants bustling to load luggage. The family plaque looms heavily under the setting sun. The streets are quiet, the air thick with farewell. Consort Jiang stands beside the carriage, dressed in resplendent palace attire, her expression sorrowful. She glances back at the Jiang residence, eyes filled with reluctance and resignation. In my father's eyes, I was nothing more than a useless chess piece, a pawn to be discarded at will. Thus, I was sent into that gilded yet heartless palace, becoming Consort Jiang. Full shot, high-angle shot.",
+        "Afternoon, the palace courtyard. The winding veranda stretches out, a lone plum blossom blooms in the corner, dewdrops clinging to its petals. Soft sunlight filters through the clouds, the air carrying a faint plum fragrance. Consort Jiang sits on the veranda, frail and hollow-eyed as she stares at the plum blossom, her face etched with desolation and loneliness. In the depths of the palace, I had no hope for the future, merely drifting through each day in a haze. I often sat alone on the veranda, gazing at a solitary plum blossom in the corner, overwhelmed by boundless sorrow. Medium long shot, eye level shot.",
+        "Afternoon, the palace courtyard. Sunlight dapples the veranda, the corner plum blossom sways gently in the breeze, petals scattering. The air carries a faint plum fragrance. Consort Jiang sits on the veranda, her gaze distant as she softly recites the poem, lips slightly parted, her face tinged with quiet sorrow. That day, lost in thought on the veranda, I unconsciously recited a poem while gazing at the plum blossom: 'By the wall, a few branches of plum, braving the cold alone in bloom. From afar, I know it's not snow, for a subtle fragrance comes.'. Medium close up, eye level shot.",
+        "Afternoon, the palace courtyard. The Emperor stands at the end of the veranda, clad in imperial robes, commanding yet cold. Sunlight casts a long shadow behind him. Consort Jiang whips her head around, a flicker of alarm in her eyes. The Emperor stands nearby, his piercing gaze locked on her, a hint of amusement playing on his lips. Suddenly, a deep, authoritative voice rang out: 'Consort Jiang seems lost in thought—missing someone?' Startled, I turned to see the Emperor standing not far away, his piercing gaze fixed on me. Medium shot, side shot.",
+        "Afternoon, the palace courtyard. The Emperor approaches Consort Jiang on the veranda. A breeze stirs, plum petals drift down, the air faintly scented with plum blossoms. The Emperor stands before Consort Jiang, smiling faintly, his eyes cold yet playful. Consort Jiang bows her head, her expression conflicted, hands clenched tightly. The Emperor smiled faintly, his words layered with meaning: 'Since you’ve entered the palace, you should content yourself by my side. It’s best to let go of futile longings.'. Medium close up, eye level shot.",
+        "Afternoon, the palace courtyard. The plum branch is snapped off, petals scattered. Sunlight filters through leaves, casting dappled light. The Emperor offers the plum branch to Consort Jiang, his gaze inscrutable. She accepts it, her expression puzzled, fingers lightly tracing the petals. The Emperor ordered someone to pluck the plum blossom and hand it to me, saying meaningfully: 'Pluck the blossom while you may, don’t wait till branches bare you sigh.'. Close up, eye level shot.",
+        "Afternoon, the palace courtyard. The plum branch slips from Consort Jiang’s hand, petals scattering. Sunlight remains gentle, the air faintly fragrant. Consort Jiang sways, her face deathly pale, confusion flashing in her eyes before she collapses, the plum branch tumbling beside her. Baffled by his meaning, I suddenly felt dizzy. Darkness swallowed my vision, and I collapsed. Medium shot, low-angle shot.",
+        "Evening, the palace bedchamber. Candlelight flickers, bed curtains hang softly. A bowl of steaming medicine rests on the table, the air tinged with its bitter scent. Consort Jiang lies in bed, still pale. The Emperor sits beside her, his gaze tender, one hand lightly holding hers. When I awoke, the Emperor was seated at my bedside, gazing at me gently. Close up, eye level shot.",
+        "Early morning, the palace courtyard. Mist lingers, dew glistens on grass. Birds chirp in the distance, the air crisp and fresh. The Emperor stands tall in the courtyard’s center. Consort Jiang stands beside him, hesitant, her hands clasped tightly before her. He proposed that I join him each morning for exercise to strengthen my body. Though reluctant, I couldn’t refuse his decree. Full shot, high-angle shot.",
+        "Early morning, the palace courtyard. Consort Jiang lies on the grass, pale and breathless. The Emperor stands nearby, entertained, sunlight filtering through the mist. Consort Jiang lies on the ground, gasping. The Emperor watches, a smirk playing on his lips, his eyes alight with amusement. For days afterward, I collapsed each time from exhaustion. The Emperor, however, seemed amused, as if observing a diverting game. Medium shot, side shot.",
+        "Early morning, the palace courtyard. The mist has lifted, sunlight bright. The grass is dry, maids murmur in the distance, the air fresh. The Emperor stands before Consort Jiang, his expression softened. She sits on the ground, still pale but with a glimmer of relief in her eyes. Only on the fifth day did he mercifully end this 'torment.'. Medium long shot, eye level shot.",
+        "Afternoon, the palace bedchamber. Sunlight streams through the windows, yet the room feels chilly. Delicate pastries sit untouched on the table, the air lightly scented with tea. Lady Jiang sits at the table, aloof. Consort Jiang stands nearby, her expression troubled, hands clenched behind her back. That day, my mother, Lady Jiang, visited me in the palace. Her demeanor was as cold as ever, as if we were strangers. Medium shot, eye level shot.",
+        "Afternoon, the palace bedchamber. Sunlight slants through the lattice, casting shadows. The pastries remain untouched, the air thick with tension. Lady Jiang fixes Consort Jiang with a sharp gaze, her lips curled in a sneer. Consort Jiang bows her head, tense, fingers twisting together. She mentioned my pre-palace arrangement with the Prince of Xiangyang, her tone laced with threat. I denied it, but Mother sneered, 'Do you think you can deceive me? Remember, your life is still in my hands.'. Medium close up, eye level shot.",
+        "Afternoon, the palace bedchamber. The Emperor throws the door open, sunlight haloing him. The room freezes, the air crackling with tension. The Emperor looms in the doorway, his expression stormy. Lady Jiang pales, trembling slightly. Consort Jiang stands frozen, panic in her eyes. Just then, the Emperor appeared unexpectedly. Having overheard us, his face darkened as he interrogated Mother about the Prince of Xiangyang. Medium shot, side shot.",
+        "Afternoon, the palace bedchamber. The plush carpet muffles sound. Sunlight filters through the lattice, the room tense to the breaking point. Lady Jiang kneels, shaking, her face ashen. Consort Jiang kneels beside her, frantic, hands clasped tightly. The Emperor looms over them, his expression unreadable. Mother turned deathly pale, kneeling to beg for mercy. My heart clenched, and I too knelt, pleading with the Emperor to spare her. Medium close up, eye level shot.",
+        "Afternoon, the palace bedchamber. With Lady Jiang gone, the room feels cavernous. Sunlight still slants through the lattice, the air heavy. The Emperor sits at the table, stern. Consort Jiang stands before him, conflicted, hands clenched at her sides, hesitation in her eyes. The Emperor cast a frigid glance at Mother but ultimately let her go. Then he demanded an explanation about the Prince of Xiangyang. Medium shot, eye level shot.",
+        "Afternoon, the palace bedchamber. Sunlight brightens the room, the mood easing slightly. The pastries remain untouched, the air complex. Consort Jiang inhales deeply, her gaze steady. The Emperor listens, his expression thawing slightly, fingers drumming the table thoughtfully. I took a deep breath and confessed the affair between the Prince of Xiangyang and my elder sister. The Emperor’s expression softened slightly, and he revealed he’d kept the Prince alive merely for sport. Then he ordered punishments for both the Prince and my sister. Medium close up, eye level shot.",
+        "Evening, the palace courtyard. The sun sets, painting the sky in vivid hues. A breeze stirs the leaves, the air sweet with flowers. Consort Jiang stands in the courtyard, gazing at the sunset, her expression complex but with a glimmer of release and peace. I felt vindicated by the Emperor’s actions, and my resentment toward him faded somewhat. Medium long shot, high-angle shot.",
+        "Night, the palace bedchamber. Candlelight flickers, bed curtains drawn. Exquisite dishes adorn the table, the air rich with food. The Emperor and Consort Jiang dine together, his demeanor gentle. She keeps her head down, nervous yet with a flicker of anticipation. That night, the Emperor dined in my chambers and stayed over. I braced for the worst, but he merely held me quietly as we slept. Medium shot, eye level shot.",
+        "Early morning, the palace bedchamber. Sunlight streams through the lattice, the bed curtains soft. An exquisite jade pendant rests on the table, the air faintly fragrant. Consort Jiang sits on the bed, the jade pendant in her hands. Her expression is complex, a strange emotion in her eyes as her fingers trace its carvings. The next morning, I discovered the jade pendant the Emperor had left behind, and an indescribable emotion welled up inside me. Close up, eye level shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_00.png",
+            "label": "shot_00",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_01.png",
+            "label": "shot_01",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_02.png",
+            "label": "shot_02",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_03.png",
+            "label": "shot_03",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_04.png",
+            "label": "shot_04",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_05.png",
+            "label": "shot_05",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_06.png",
+            "label": "shot_06",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_07.png",
+            "label": "shot_07",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_08.png",
+            "label": "shot_08",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_09.png",
+            "label": "shot_09",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_10.png",
+            "label": "shot_10",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_11.png",
+            "label": "shot_11",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Lady_Jiang/merge.jpg",
+            "label": "Lady Jiang",
+            "guidance": "这张图片是角色Lady Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Consort Jiang's mother, a middle-aged woman from ancient China with black eyes and salt-and-pepper hair, approximately in her 40s. Her well-maintained appearance is offset by a sharp, shrewd gaze. She dresses in noblewoman attire."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_12.png",
+            "label": "shot_12",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Lady_Jiang/merge.jpg",
+            "label": "Lady Jiang",
+            "guidance": "这张图片是角色Lady Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Consort Jiang's mother, a middle-aged woman from ancient China with black eyes and salt-and-pepper hair, approximately in her 40s. Her well-maintained appearance is offset by a sharp, shrewd gaze. She dresses in noblewoman attire."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_13.png",
+            "label": "shot_13",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Lady_Jiang/merge.jpg",
+            "label": "Lady Jiang",
+            "guidance": "这张图片是角色Lady Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Consort Jiang's mother, a middle-aged woman from ancient China with black eyes and salt-and-pepper hair, approximately in her 40s. Her well-maintained appearance is offset by a sharp, shrewd gaze. She dresses in noblewoman attire."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_14.png",
+            "label": "shot_14",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Lady_Jiang/merge.jpg",
+            "label": "Lady Jiang",
+            "guidance": "这张图片是角色Lady Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Consort Jiang's mother, a middle-aged woman from ancient China with black eyes and salt-and-pepper hair, approximately in her 40s. Her well-maintained appearance is offset by a sharp, shrewd gaze. She dresses in noblewoman attire."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_15.png",
+            "label": "shot_15",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_16.png",
+            "label": "shot_16",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_17.png",
+            "label": "shot_17",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_18.png",
+            "label": "shot_18",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Emperor/merge.jpg",
+            "label": "Emperor",
+            "guidance": "这张图片是角色Emperor的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young man from ancient China with black hair and black eyes, approximately in his 20s, tall and handsome with a commanding presence. His eyes, however, hint at a cold and calculating nature. He wears imperial robes, exuding both authority and unpredictability."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_19.png",
+            "label": "shot_19",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/08/Consort_Jiang/merge.jpg",
+            "label": "Consort Jiang",
+            "guidance": "这张图片是角色Consort Jiang的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：A young woman from ancient China with black hair and black eyes, approximately 18-19 years old, frail in stature with a pale complexion. She wears extravagant palace attire but always carries an air of melancholy and listlessness."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/8/shot_20.png",
+            "label": "shot_20",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "story_name": "msvbench_60_character_and_shot_references",
+  "story_overview": "MSVBench story 60 (Ancient Chinese Novels). Narration: In the late Eastern Han Dynasty, the Yellow Turban Rebellion erupted, plunging the world into chaos. Liu Yan, the governor of Youzhou, recruited volunteers, and the notice reached Zhuoxian County. The three swear brotherhood in the Peach Garden, pledging to unite and save the country and its people. Liu Bei hears that his mentor Lu Zhi is fighting the Yellow Turban Army in Guangzong and leads his troops to support. Upon arrival, he discovers Lu Zhi has been arrested by the imperial court.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "60",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, streets of Zhuoxian County, bustling with people, various street vendors, notice wall with the proclamation, bright sunlight. The streets are bustling with people, a crowd gathered in front of the notice wall, the proclamation stands out prominently on the wall. Narration: In the late Eastern Han Dynasty, the Yellow Turban Rebellion erupted, plunging the world into chaos. Liu Yan, the governor of Youzhou, recruited volunteers, and the notice reached Zhuoxian County. Wide shot, eye level shot.",
+        "Daytime, streets of Zhuoxian County, bustling with people, various street vendors, notice wall with the proclamation, bright sunlight. Liu Bei stands in front of the notice wall, his expression solemn, slightly frowning, hands behind his back, gazing at the proclamation. Liu Bei sees the proclamation and laments his inability to serve the country. Medium shot, side shot.",
+        "Daytime, streets of Zhuoxian County, bustling with people, various street vendors, notice wall with the proclamation, bright sunlight. Zhang Fei stands beside Liu Bei, his expression hearty, right hand patting Liu Bei's shoulder, eyes determined. Zhang Fei appears, willing to fund Liu Bei's recruitment of local volunteers. Medium close up, front shot.",
+        "Daytime, tavern in Zhuoxian County, lively atmosphere inside, wooden tables and chairs, jars and bowls of wine, sunlight streaming through the windows. Liu Bei and Zhang Fei are seated inside the tavern, Guan Yu stands before them, all three looking solemn, Guan Yu with hands clasped in salute. While drinking, they encounter Guan Yu. Medium shot, eye level shot.",
+        "Daytime, Peach Garden, peach blossoms in full bloom, petals falling, stone table and stools, bright sunlight. Liu Bei, Zhang Fei, and Guan Yu stand at the center of the Peach Garden, their expressions solemn, hands raised in a vow to heaven. The three swear brotherhood in the Peach Garden, pledging to unite and save the country and its people. Full shot, low-angle shot.",
+        "Daytime, training ground in Zhuoxian County, volunteers drilling, weapon racks filled with weapons, armor piled nearby, bright sunlight. Liu Bei, Zhang Fei, and Guan Yu stand at the center of the training ground, volunteers drilling around them, weapons and armor gleaming in the sunlight. They recruit five hundred local volunteers, receive funding from merchants, and forge weapons and armor. Medium long shot, high-angle shot.",
+        "Daytime, battlefield, dust swirling, soldiers engaged in combat, Yellow Turban Army banners in the distance, glaring sunlight. Liu Bei, Zhang Fei, and Guan Yu lead their troops in battle, the Yellow Turban Army retreating in disarray, dust swirling on the battlefield. Under Governor Liu Yan's orders, they march to battle the Yellow Turban Army. Their first battle is victorious, defeating the enemy decisively. Wide shot, bird's eye view shot.",
+        "Daytime, outside Guangzong city, soldiers encamped, city walls in the distance, bright sunlight. Liu Bei, Zhang Fei, and Guan Yu stand at the center of the camp, their expressions grave, soldiers busy around them, imperial banners hanging on the distant city walls. Liu Bei hears that his mentor Lu Zhi is fighting the Yellow Turban Army in Guangzong and leads his troops to support. Upon arrival, he discovers Lu Zhi has been arrested by the imperial court. Medium shot, side shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_00.png",
+            "label": "shot_00",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_01.png",
+            "label": "shot_01",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_02.png",
+            "label": "shot_02",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Guan_Yu/merge.jpg",
+            "label": "Guan Yu",
+            "guidance": "这张图片是角色Guan Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Guan Yu, an ancient Chinese man with a red face and long beard that reaches almost to his chest, slender but sharp and spirited eyes, thick eyebrows, towering and majestic in stature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_03.png",
+            "label": "shot_03",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Guan_Yu/merge.jpg",
+            "label": "Guan Yu",
+            "guidance": "这张图片是角色Guan Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Guan Yu, an ancient Chinese man with a red face and long beard that reaches almost to his chest, slender but sharp and spirited eyes, thick eyebrows, towering and majestic in stature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_04.png",
+            "label": "shot_04",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Guan_Yu/merge.jpg",
+            "label": "Guan Yu",
+            "guidance": "这张图片是角色Guan Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Guan Yu, an ancient Chinese man with a red face and long beard that reaches almost to his chest, slender but sharp and spirited eyes, thick eyebrows, towering and majestic in stature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_05.png",
+            "label": "shot_05",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Guan_Yu/merge.jpg",
+            "label": "Guan Yu",
+            "guidance": "这张图片是角色Guan Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Guan Yu, an ancient Chinese man with a red face and long beard that reaches almost to his chest, slender but sharp and spirited eyes, thick eyebrows, towering and majestic in stature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_06.png",
+            "label": "shot_06",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ],
+        [
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Liu_Bei/merge.jpg",
+            "label": "Liu Bei",
+            "guidance": "这张图片是角色Liu Bei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Liu Bei, an ancient Chinese man with a benevolent and dignified face, gentle and warm eyes, neatly trimmed medium-length beard, soft and moist eyes revealing resilience and endurance, embodying a broad-minded and virtuous demeanor."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Zhang_Fei/merge.jpg",
+            "label": "Zhang Fei",
+            "guidance": "这张图片是角色Zhang Fei的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Zhang Fei, an ancient Chinese man with a dense full beard, burly physique, fierce presence, rough yet honest and straightforward in character."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/characters/60/Guan_Yu/merge.jpg",
+            "label": "Guan Yu",
+            "guidance": "这张图片是角色Guan Yu的形象参考图，其中可能包含角色的多张不同姿态的参考图，请按照剧本要求合理选择参考。角色描述：Guan Yu, an ancient Chinese man with a red face and long beard that reaches almost to his chest, slender but sharp and spirited eyes, thick eyebrows, towering and majestic in stature."
+          },
+          {
+            "image_path": "/home/wxh/world_model_projects/MSVBench/Dataset/Dataset/gpt4o/60/shot_07.png",
+            "label": "shot_07",
+            "guidance": "这张图片是该Shot的整体参考图,请结合剧本要求合理参考。"
+          }
+        ]
+      ]
+    }
+  ]
+}

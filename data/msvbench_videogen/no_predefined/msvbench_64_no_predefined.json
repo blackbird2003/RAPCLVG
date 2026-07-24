@@ -1,0 +1,39 @@
+{
+  "story_name": "msvbench_64_no_predefined",
+  "story_overview": "MSVBench story 64 (Modern and Contemporary China Novels). Ah Q walks proudly down the street, his finger brushing against the young nun's face, the smooth sensation making his heart flutter. Ah Q impulsively says to Mrs. Wu, 'Let's sleep together, let's sleep together!' Mrs. Wu, terrified, screams and runs away. Ah Q flees the Zhao household and hides in the Earth God Temple. The local constable comes to reprimand him, saying that harassing the Zhao family's servant is tantamount to rebellion.",
+  "source_dataset": "MSVBench",
+  "source_story_id": "64",
+  "scenes": [
+    {
+      "scene_num": 1,
+      "video_prompts": [
+        "Daytime, the streets of Weizhuang, bustling atmosphere, low houses lining both sides of the street, uneven dirt roads on the ground, a few vendors calling out their wares by the roadside, a large locust tree in the distance, bright sunlight. Ah Q walks proudly in the center of the street, while the young nun walks with her head down on the roadside. Ah Q's finger accidentally touches the young nun's cheek. Ah Q looks smug, while the young nun appears shy, her cheeks slightly flushed. Ah Q walks proudly down the street, his finger brushing against the young nun's face, the smooth sensation making his heart flutter. Medium shot, eye level shot.",
+        "Daytime, the backyard of Mr. Zhao's house, busy atmosphere, a well in the yard, a few chickens pecking around, clothes hanging on a clothesline, sunlight filtering through the leaves onto the ground. Ah Q and Mrs. Wu stand beside the well. Mrs. Wu holds a wooden bucket and is chatting with Ah Q. Ah Q looks distracted, his eyes wandering, while Mrs. Wu appears earnest, her mouth opening and closing. Ah Q works at Mr. Zhao's house and chats with the maid, Mrs. Wu. Mrs. Wu talks about household chores, but Ah Q only hears the words 'woman.'. Medium long shot, side shot.",
+        "Daytime, the backyard of Mr. Zhao's house, tense atmosphere, chickens in the yard scattering in alarm, clothes on the clothesline fluttering in the wind, sunlight still bright. Ah Q looks agitated, leaning forward as he shouts at Mrs. Wu. Mrs. Wu appears horrified, covering her mouth with her hands and stepping back. Ah Q impulsively says to Mrs. Wu, 'Let's sleep together, let's sleep together!' Mrs. Wu, terrified, screams and runs away. Close up, front shot.",
+        "Daytime, the backyard of Mr. Zhao's house, chaotic atmosphere, a few chicken feathers scattered on the ground, clothes on the clothesline flapping violently in the wind, sunlight obscured by clouds, lighting dimming. Ah Q lies on the ground, clutching his head in pain. Mr. Zhao stands beside Ah Q, holding a large bamboo pole, looking furious as he raises the pole to strike. Before Ah Q can react, Mr. Zhao beats him with a large bamboo pole. Medium shot, high-angle shot.",
+        "Evening, inside the Earth God Temple, dim atmosphere, only an oil lamp providing faint light, a few tattered portraits hanging on the walls, straw spread on the ground, a desolate field outside the door. Ah Q crouches in a corner of the temple, looking terrified. The local constable stands in front of Ah Q, his expression stern as he points at Ah Q, his mouth opening and closing as if scolding him. Ah Q flees the Zhao household and hides in the Earth God Temple. The local constable comes to reprimand him, saying that harassing the Zhao family's servant is tantamount to rebellion. Full shot, low-angle shot."
+      ],
+      "cut": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "durations": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "predefined_references": [
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    }
+  ]
+}

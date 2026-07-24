@@ -1,0 +1,18 @@
+{
+  "image_factor": 28,
+  "min_tokens": 4,
+  "max_tokens": 20480,
+  "min_pixels": 3136,
+  "max_pixels": 16056320,
+  "max_ratio": 200,
+  "video_min_tokens": 48,
+  "video_max_tokens": 768,
+  "video_min_pixels": 25088,
+  "video_max_pixels": 602112,
+  "video_total_pixels": 51380224,
+  "min_frame_similarity": 0.88,
+  "max_keyframe_num": 2,
+  "adaptive_alpha": 0.005,
+  "hpsv3_quality_threshold": 3.2,
+  "compare_with_history": false
+}

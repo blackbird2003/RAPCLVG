@@ -1,0 +1,896 @@
+{% extends "base.html" %}
+{% macro attempt_log_table(logs) -%}
+  {% if logs %}
+  <div class="visual-table-wrap">
+    <table class="visual-data-table attempt-log-table">
+      <thead><tr><th>Time</th><th>Step</th><th>Message</th></tr></thead>
+      <tbody>
+      {% for log in logs %}
+        <tr><td>{{ log.time }}</td><td>{{ log.step }}</td><td><pre class="log-message">{{ log.message }}</pre></td></tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}<div class="placeholder-line">No logs recorded for this step.</div>{% endif %}
+{%- endmacro %}
+{% block title %}{{ project.name }} · videogen_notebook{% endblock %}
+{% block content %}
+<form id="project-save-form" method="post" action="/projects/{{ project.project_id }}/save"></form>
+
+<section class="project-toolbar">
+  <div>
+    <a class="back-link" href="/">Projects</a>
+    <div class="project-name-form">
+      <input form="project-save-form" aria-label="Project name" id="project-name" name="project-name" value="{{ project.name }}" maxlength="160" required>
+      <button form="project-save-form" class="icon-button" type="submit" title="Save project">Save</button>
+    </div>
+    <div class="meta-line">
+      <span class="status status-{{ project.status }}">{{ project.status }}</span>
+      <span>{{ project.completed_prefix }} / {{ project.shot_count }} completed</span>
+      <span>{{ settings.seedance.resolution }}</span>
+      <span>{{ settings.seedance.ratio }}</span>
+      <span>Estimated CNY {{ "%.4f"|format(project.cost_summary.estimated_cny) }}</span>
+    </div>
+  </div>
+  <div class="toolbar-actions">
+    <a class="button" href="/projects/{{ project.project_id }}/story-design.json">Export JSON</a>
+    <button form="project-save-form" class="button" type="submit">Save all</button>
+    <form method="post" action="/projects/{{ project.project_id }}/run-all">
+      <button class="button primary" type="submit">Run all</button>
+    </form>
+    <form method="post" action="/projects/{{ project.project_id }}/stop">
+      <button class="icon-button danger" type="submit" title="Stop project">Stop</button>
+    </form>
+  </div>
+</section>
+
+<section class="project-settings-form">
+  <div class="settings-field">
+    <label class="field-label" for="sink-frame-count">Sink frame count</label>
+    <input form="project-save-form" id="sink-frame-count" name="sink-frame-count" type="number" min="0" max="9" value="{{ settings.visual_element_memory.sink_frame_count }}">
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="max-retrieved-frames">Max retrieved historical frames</label>
+    <input form="project-save-form" id="max-retrieved-frames" name="max-retrieved-frames" type="number" min="0" max="9" value="{{ settings.visual_element_memory.max_retrieved_frames }}">
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="selection-mode">Reference selection</label>
+    <select form="project-save-form" id="selection-mode" name="selection-mode">
+      <option value="greedy_coverage" {% if settings.visual_element_memory.selection_mode == "greedy_coverage" %}selected{% endif %}>Greedy coverage</option>
+      <option value="static_top_k" {% if settings.visual_element_memory.selection_mode == "static_top_k" %}selected{% endif %}>Static top-k</option>
+      <option value="naive_top_k" {% if settings.visual_element_memory.selection_mode == "naive_top_k" %}selected{% endif %}>Naive top-k</option>
+      <option value="storymem_memory" {% if settings.visual_element_memory.selection_mode == "storymem_memory" %}selected{% endif %}>StoryMem memory</option>
+      <option value="none" {% if settings.visual_element_memory.selection_mode == "none" %}selected{% endif %}>Disable reference images</option>
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="default-duration">Default duration</label>
+    <select form="project-save-form" id="default-duration" name="default-duration">
+      {% for duration in [-1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] %}
+      <option value="{{ duration }}" {% if settings.generation.default_duration_seconds == duration %}selected{% endif %}>{{ "自动" if duration == -1 else duration ~ "s" }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="default-non-cut-mode">Default non-cut generation mode</label>
+    <select form="project-save-form" id="default-non-cut-mode" name="default-non-cut-mode">
+      {% for mode, label in [("smooth", "Smooth"), ("default", "Default"), ("last_frame_only", "Last frame only")] %}
+      <option value="{{ mode }}" {% if settings.generation.default_non_cut_mode == mode %}selected{% endif %}>{{ label }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="seedance-resolution">Quality</label>
+    <select form="project-save-form" id="seedance-resolution" name="seedance-resolution">
+      {% for resolution in ["480p", "720p", "1080p"] %}
+      <option value="{{ resolution }}" {% if settings.seedance.resolution == resolution %}selected{% endif %}>{{ resolution }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="seedance-ratio">Aspect ratio</label>
+    <select form="project-save-form" id="seedance-ratio" name="seedance-ratio">
+      {% for ratio in ["16:9", "9:16", "1:1", "4:3", "3:4"] %}
+      <option value="{{ ratio }}" {% if settings.seedance.ratio == ratio %}selected{% endif %}>{{ ratio }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="audio" type="checkbox" {% if settings.generation.audio %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Generate audio</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="force-animation-style" type="checkbox" {% if settings.generation.force_animation_style %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Force animation</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="prompt-module-full-script-context" type="checkbox" {% if settings.prompt_modules.full_script_context %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Full script context</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="prompt-module-visual-element-plan" type="checkbox" {% if settings.prompt_modules.visual_element_plan %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Visual element plan</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="prompt-module-holistic-guidance" type="checkbox" {% if settings.prompt_modules.holistic_guidance %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Holistic description and reference guidance</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="prompt-module-should-reference" type="checkbox" {% if settings.prompt_modules.should_reference %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Should reference constraints</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="prompt-module-should-exclude" type="checkbox" {% if settings.prompt_modules.should_exclude %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Should exclude constraints</span>
+  </label>
+  <div class="settings-field">
+    <label class="field-label" for="auto-run-step-review-delay">Step review delay</label>
+    <select form="project-save-form" id="auto-run-step-review-delay" name="auto-run-step-review-delay">
+      {% for delay in [0, 10, 30, 60, 120] %}
+      <option value="{{ delay }}" {% if settings.generation.auto_run_step_review_delay_seconds == delay %}selected{% endif %}>{{ delay }}s</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="algorithm-step-max-attempts">Step max attempts</label>
+    <input form="project-save-form" id="algorithm-step-max-attempts" name="algorithm-step-max-attempts" type="number" min="1" max="10" value="{{ settings.generation.algorithm_step_max_attempts }}">
+  </div>
+  <div class="settings-field">
+    <label class="field-label" for="smooth-reference-seconds">Smooth reference video</label>
+    <input form="project-save-form" id="smooth-reference-seconds" name="smooth-reference-seconds" type="number" min="0.5" max="10" step="0.5" value="{{ settings.generation.smooth_reference_seconds }}">
+  </div>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="require-seedance-confirmation" type="checkbox" {% if settings.generation.require_human_confirmation_before_seedance %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Seedance submit requires human confirmation</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="auto-reflect-visual-plan" type="checkbox" {% if settings.generation.auto_reflect_visual_plan %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Auto reflect visual plan</span>
+  </label>
+  <label class="switch-control settings-audio">
+    <input form="project-save-form" name="auto-submit-eval" type="checkbox" {% if settings.evaluation.auto_submit_eval %}checked{% endif %}>
+    <span class="switch-track" aria-hidden="true"></span>
+    <span>Auto Submit Eval</span>
+  </label>
+  <details class="scoring-settings">
+    <summary>Scoring weights</summary>
+    {% set scoring = settings.visual_element_memory.scoring %}
+    <div class="scoring-grid">
+      <div class="settings-field">
+        <label class="field-label" for="score-character-weight">Character</label>
+        <input form="project-save-form" id="score-character-weight" name="score-character-weight" type="number" step="0.01" value="{{ scoring.character_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-scene-weight">Scene</label>
+        <input form="project-save-form" id="score-scene-weight" name="score-scene-weight" type="number" step="0.01" value="{{ scoring.scene_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-object-weight">Object</label>
+        <input form="project-save-form" id="score-object-weight" name="score-object-weight" type="number" step="0.01" value="{{ scoring.object_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-reference-uncovered-weight">Reference uncovered</label>
+        <input form="project-save-form" id="score-reference-uncovered-weight" name="score-reference-uncovered-weight" type="number" step="0.01" value="{{ scoring.reference_uncovered_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-reference-covered-weight">Reference covered</label>
+        <input form="project-save-form" id="score-reference-covered-weight" name="score-reference-covered-weight" type="number" step="0.01" value="{{ scoring.reference_covered_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-optional-weight">Optional</label>
+        <input form="project-save-form" id="score-optional-weight" name="score-optional-weight" type="number" step="0.01" value="{{ scoring.optional_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-exclude-weight">Exclude</label>
+        <input form="project-save-form" id="score-exclude-weight" name="score-exclude-weight" type="number" step="0.01" value="{{ scoring.exclude_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-quality-full-weight">Quality full</label>
+        <input form="project-save-form" id="score-quality-full-weight" name="score-quality-full-weight" type="number" step="0.01" value="{{ scoring.quality_full_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-quality-partial-weight">Quality partial</label>
+        <input form="project-save-form" id="score-quality-partial-weight" name="score-quality-partial-weight" type="number" step="0.01" value="{{ scoring.quality_partial_weight }}">
+      </div>
+      <div class="settings-field">
+        <label class="field-label" for="score-quality-weak-weight">Quality weak</label>
+        <input form="project-save-form" id="score-quality-weak-weight" name="score-quality-weak-weight" type="number" step="0.01" value="{{ scoring.quality_weak_weight }}">
+      </div>
+    </div>
+  </details>
+  <div class="readonly-settings">
+    <span>Seedance settings · Model: {{ settings.seedance.model }}</span>
+  </div>
+</section>
+
+{% if project.run_state %}
+<section class="run-state-banner">
+  <span class="status status-{{ project.run_state.status }}">{{ project.run_state.status }}</span>
+  {% if project.run_state.to_step %}<span>Next: {{ project.run_state.to_step|replace("_", " ") }}</span>{% endif %}
+  {% if project.run_state.deadline_at %}<span>Deadline: {{ project.run_state.deadline_at }}</span>{% endif %}
+  {% if project.run_state.message %}<span>{{ project.run_state.message }}</span>{% endif %}
+</section>
+{% endif %}
+
+<div class="notebook" data-project-id="{{ project.project_id }}">
+  {% for shot in shots %}
+  <section class="shot-block" id="{{ shot.shot_id }}">
+    <div class="shot-label">
+      <span class="execution-index">{{ "%02d"|format(shot.order_index + 1) }}</span>
+      <div><span>Scene {{ shot.scene_num }}</span><strong>Shot {{ shot.shot_num }}</strong></div>
+    </div>
+
+    <div class="runtime-header shot-control-bar">
+      <div class="runtime-state">
+        <span class="status status-{{ shot.state.status }}">{{ shot.state.status }}</span>
+        {% if shot.attempt %}<span>Attempt {{ shot.attempt.attempt_id }}</span>{% endif %}
+      </div>
+      <div class="runtime-actions">
+        <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/run">
+          <button class="button small" type="submit" {% if shot.state.status == "completed" or (shot.state.status|running_like) %}disabled{% endif %}>Run Shot</button>
+        </form>
+        {% if shot.state.status|running_like %}
+        <form method="post" action="/projects/{{ project.project_id }}/stop">
+          <button class="button small" type="submit">Stop Shot</button>
+        </form>
+        {% endif %}
+        <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/reset-from" onsubmit="return confirm('Reset this shot and all following shots to draft?')">
+          <button class="icon-button" type="submit" title="Reset from this shot">Reset</button>
+        </form>
+        <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/fork-after">
+          <button class="icon-button" type="submit" title="Fork after this shot">Fork</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="shot-inputs step-card step-card-design">
+      <div class="step-heading shot-design-heading">
+        <h3>Step 1 · Shot Design</h3>
+      </div>
+      <div class="shot-field">
+        <label class="field-label" for="prompt-{{ shot.shot_id }}">Video prompt</label>
+        <textarea form="project-save-form" id="prompt-{{ shot.shot_id }}" name="shot-{{ shot.shot_id }}-prompt" rows="5">{{ shot.inputs.video_prompt }}</textarea>
+      </div>
+      <div class="shot-field compact-field">
+        <span class="field-label">Cut</span>
+        <label class="switch-control">
+          <input form="project-save-form" name="shot-{{ shot.shot_id }}-is-cut" type="checkbox" {% if shot.inputs.is_cut %}checked{% endif %}>
+          <span class="switch-track" aria-hidden="true"></span>
+          <span>{{ "On" if shot.inputs.is_cut else "Off" }}</span>
+        </label>
+      </div>
+      <div class="shot-field compact-field">
+        <label class="field-label" for="mode-{{ shot.shot_id }}">Generation mode</label>
+        <select form="project-save-form" id="mode-{{ shot.shot_id }}" name="shot-{{ shot.shot_id }}-generation-mode">
+          {% for mode in ["default", "smooth", "last_frame_only"] %}
+          <option value="{{ mode }}" {% if shot.inputs.generation_mode == mode %}selected{% endif %}>{{ mode|replace("_", " ") }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="shot-field compact-field">
+        <label class="field-label" for="duration-{{ shot.shot_id }}">Generation duration</label>
+        <select form="project-save-form" id="duration-{{ shot.shot_id }}" name="shot-{{ shot.shot_id }}-duration" class="duration-select">
+          {% for duration in [-1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] %}
+          <option value="{{ duration }}" {% if shot.inputs.duration_seconds == duration %}selected{% endif %}>{{ "自动" if duration == -1 else duration ~ "s" }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="shot-field predefined-reference-field">
+        <label class="field-label">Predefined References</label>
+        {% set predefined_refs = shot.inputs.predefined_references or [] %}
+        {% if predefined_refs %}
+        <div class="visual-table-wrap predefined-reference-wrap">
+          <table class="visual-data-table predefined-reference-table">
+            <thead>
+              <tr><th>Preview</th><th>Label</th><th>Guidance</th></tr>
+            </thead>
+            <tbody>
+              {% for reference in predefined_refs %}
+              <tr>
+                <td class="visual-preview-cell">
+                  <input form="project-save-form" type="hidden" name="shot-{{ shot.shot_id }}-predefined-id" value="{{ reference.id }}">
+                  <label class="keep-reference-control">
+                    <input form="project-save-form" type="checkbox" name="shot-{{ shot.shot_id }}-predefined-keep" value="{{ reference.id }}" checked>
+                    Keep
+                  </label>
+                  {% if reference.media_url %}
+                  <img class="thumb-img" src="{{ reference.media_url }}" alt="{{ reference.label or 'Predefined reference' }}">
+                  {% else %}
+                  <span class="placeholder-line">No preview</span>
+                  {% endif %}
+                </td>
+                <td>
+                  <input form="project-save-form" name="shot-{{ shot.shot_id }}-predefined-label" value="{{ reference.label or '' }}">
+                </td>
+                <td>
+                  <textarea form="project-save-form" name="shot-{{ shot.shot_id }}-predefined-guidance" rows="4">{{ reference.guidance or "" }}</textarea>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        {% else %}
+        <div class="placeholder-line">No predefined references.</div>
+        {% endif %}
+        <form class="predefined-upload-form" method="post" enctype="multipart/form-data" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/predefined-references/add">
+          <input type="file" name="image_file" accept="image/*" required>
+          <input type="text" name="label" placeholder="Label">
+          <textarea name="guidance" rows="2" placeholder="Guidance"></textarea>
+          <button class="button small" type="submit">Add Reference</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="shot-runtime">
+      <div class="runtime-section visual-section step-card step-card-visual-plan">
+        {% set visual_record = (shot.attempt.visual_element_details.get("visual_element_record", {}) if shot.attempt and shot.attempt.visual_element_details else {}) %}
+        {% set editing_visual_plan = request.query_params.get("edit_visual_plan") == shot.shot_id %}
+        {% set visual_type_options = ["character", "scene", "object"] %}
+        {% set visual_status_options = ["should_reference", "should_exclude", "optional_or_uncertain", "new"] %}
+        {% set introduced_ids = shots|map(attribute="shot_id")|list %}
+        <div class="step-heading">
+          <h3>Step 2 · Visual Elements Plan <span>{{ shot.attempt.visual_element_status|length if shot.attempt else 0 }}</span></h3>
+          <div class="step-actions">
+            {% if shot.attempt and not editing_visual_plan and not (shot.state.status|running_like) %}
+            <a class="button small" href="/projects/{{ project.project_id }}?edit_visual_plan={{ shot.shot_id }}#{{ shot.shot_id }}">Edit</a>
+            {% endif %}
+            <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/visual-plan/reflect">
+              <button class="button small secondary" type="submit" {% if not shot.attempt or not shot.attempt.visual_element_status or (shot.state.status|running_like) %}disabled{% endif %}>Reflect</button>
+            </form>
+            <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/steps/visual_plan/run">
+              <button class="button small" type="submit" {% if shot.state.status|running_like %}disabled{% endif %}>Run Step</button>
+            </form>
+          </div>
+        </div>
+        {% if editing_visual_plan and shot.attempt %}
+        <form class="visual-edit-form" method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/visual-plan/save">
+          <div class="visual-edit-toolbar">
+            <button class="button small" type="button" data-add-visual-row>Add element</button>
+            <a class="button small secondary" href="/projects/{{ project.project_id }}#{{ shot.shot_id }}">Cancel</a>
+            <button class="button small primary" type="submit">Save</button>
+          </div>
+          <div class="visual-table-wrap">
+            <table class="visual-data-table visual-edit-table">
+              <thead>
+                <tr>
+                  <th>Name</th><th>ID</th><th>Type</th><th>Status</th><th>Introduced</th><th>Notes</th><th>Status reason</th><th></th>
+                </tr>
+              </thead>
+              <tbody data-visual-rows>
+              {% for element in shot.attempt.visual_element_status %}
+                {% set element_id = element.element_id or element.id %}
+                {% set element_state = element.status or element.state or "optional_or_uncertain" %}
+                {% set element_type = element.type or "object" %}
+                {% set introduced_value = element.introduced_at or shot.shot_id %}
+                <tr>
+                  <td><input name="element-name" value="{{ element.name }}" required></td>
+                  <td>
+                    <input name="element-token" type="hidden" value="{{ element_id or loop.index }}">
+                    <input name="element-id" value="{{ element_id }}">
+                  </td>
+                  <td>
+                    <select name="element-type">
+                      {% if element_type not in visual_type_options %}<option value="{{ element_type }}" selected>{{ element_type }}</option>{% endif %}
+                      {% for option in visual_type_options %}<option value="{{ option }}" {% if element_type == option %}selected{% endif %}>{{ option }}</option>{% endfor %}
+                    </select>
+                  </td>
+                  <td>
+                    <select name="element-status">
+                      {% for option in visual_status_options %}<option value="{{ option }}" {% if element_state == option %}selected{% endif %}>{{ option|replace("_", " ") }}</option>{% endfor %}
+                    </select>
+                  </td>
+                  <td>
+                    <select name="element-introduced">
+                      {% if introduced_value not in introduced_ids %}<option value="{{ introduced_value }}" selected>{{ introduced_value }}</option>{% endif %}
+                      {% for candidate in shots %}<option value="{{ candidate.shot_id }}" {% if introduced_value == candidate.shot_id %}selected{% endif %}>Shot {{ candidate.shot_num }} · {{ candidate.shot_id }}</option>{% endfor %}
+                    </select>
+                  </td>
+                  <td><input name="element-notes" value="{{ element.notes }}"></td>
+                  <td><input name="element-reason" value="{{ element.reason or element.state_reason }}"></td>
+                  <td><button class="icon-button danger" type="button" data-remove-visual-row title="Delete row">Delete</button></td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <template data-visual-row-template>
+            <tr>
+              <td><input name="element-name" value="" required></td>
+              <td>
+                <input name="element-token" type="hidden" value="__TOKEN__">
+                <input name="element-id" value="">
+              </td>
+              <td>
+                <select name="element-type">
+                  {% for option in visual_type_options %}<option value="{{ option }}" {% if option == "object" %}selected{% endif %}>{{ option }}</option>{% endfor %}
+                </select>
+              </td>
+              <td>
+                <select name="element-status">
+                  {% for option in visual_status_options %}<option value="{{ option }}" {% if option == "new" %}selected{% endif %}>{{ option|replace("_", " ") }}</option>{% endfor %}
+                </select>
+              </td>
+              <td>
+                <select name="element-introduced">
+                  {% for candidate in shots %}<option value="{{ candidate.shot_id }}" {% if candidate.shot_id == shot.shot_id %}selected{% endif %}>Shot {{ candidate.shot_num }} · {{ candidate.shot_id }}</option>{% endfor %}
+                </select>
+              </td>
+              <td><input name="element-notes" value=""></td>
+              <td><input name="element-reason" value=""></td>
+              <td><button class="icon-button danger" type="button" data-remove-visual-row title="Delete row">Delete</button></td>
+            </tr>
+          </template>
+        </form>
+        {% elif shot.attempt and shot.attempt.visual_element_status %}
+        <details class="visual-list-details" open>
+          <summary>{{ shot.attempt.visual_element_status|length }} elements</summary>
+          <div class="visual-table-wrap">
+            <table class="visual-data-table">
+              <thead>
+                <tr>
+                  <th>Name</th><th>ID</th><th>Type</th><th>Status</th><th>Introduced</th><th>Notes</th><th>Status reason</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for element in shot.attempt.visual_element_status %}
+                {% set element_id = element.element_id or element.id %}
+                {% set element_state = element.status or element.state %}
+                <tr>
+                  <td><strong>{{ element.name }}</strong></td>
+                  <td><code>{{ element_id }}</code></td>
+                  <td>{{ element.type }}</td>
+                  <td><span class="status status-{{ element_state }}">{{ element_state|replace("_", " ") }}</span></td>
+                  <td>{{ element.introduced_at }}</td>
+                  <td>{{ element.notes }}</td>
+                  <td>{{ element.reason or element.state_reason }}</td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+        {% elif shot.state.status == "visual_plan_failed" and shot.attempt and shot.attempt.error %}
+        <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+        {% elif shot.attempt and shot.state.status == "visual_plan_completed" %}
+        <div class="media-placeholder">No visual elements in the current plan.</div>
+        {% else %}<div class="media-placeholder">Pending</div>{% endif %}
+        <details class="attempt-details">
+          <summary>Visual Elements Plan Details</summary>
+          {% if shot.attempt %}
+            {% set elapsed = shot.steps|step_elapsed("visual_plan") %}
+            {% if elapsed %}<div class="placeholder-line">Elapsed {{ elapsed }}</div>{% endif %}
+            <div class="detail-block">
+              <h4>Logs</h4>
+              {{ attempt_log_table(shot.attempt.logs|logs_for("visual_plan")) }}
+            </div>
+            {% if visual_record %}
+            <div class="detail-block">
+              <h4>LLM request / response record</h4>
+              <pre class="detail-json">{{ visual_record|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            {% if shot.attempt.visual_element_details.get("reflection") %}
+            <div class="detail-block">
+              <h4>Reflection result</h4>
+              <pre class="detail-json">{{ shot.attempt.visual_element_details.get("reflection")|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            {% if shot.attempt.visual_element_details.get("error_details") %}
+            <div class="detail-block">
+              <h4>Error context</h4>
+              <pre class="detail-json">{{ shot.attempt.visual_element_details.get("error_details")|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            <div class="detail-block">
+              <h4>Visual element rows</h4>
+              <pre class="detail-json">{{ shot.attempt.visual_element_status|pretty_json }}</pre>
+            </div>
+            {% if shot.attempt.error %}
+            <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+            {% endif %}
+          {% else %}<div class="placeholder-line">No visual plan details yet.</div>{% endif %}
+        </details>
+      </div>
+
+      <div class="runtime-section visual-section step-card step-card-reference-selection">
+        {% set editing_references = request.query_params.get("edit_references") == shot.shot_id %}
+        <div class="step-heading">
+          <h3>Step 3 · Historical Reference Selection <span>{{ shot.attempt.selected_references|length if shot.attempt else 0 }}</span></h3>
+          <div class="step-actions">
+            {% if editing_references %}
+            <button form="reference-edit-form-{{ shot.shot_id }}" class="button small" type="submit">Save</button>
+            <a class="button small secondary" href="/projects/{{ project.project_id }}#{{ shot.shot_id }}">Cancel</a>
+            {% elif shot.attempt and shot.attempt.selected_references and not (shot.state.status|running_like) %}
+            <a class="button small" href="/projects/{{ project.project_id }}?edit_references={{ shot.shot_id }}#{{ shot.shot_id }}">Edit</a>
+            {% endif %}
+            <button class="button small secondary" type="button" disabled title="Reflect will be designed later">Reflect</button>
+            <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/steps/reference_selection/run">
+              <button class="button small" type="submit" {% if shot.state.status|running_like %}disabled{% endif %}>Run Step</button>
+            </form>
+          </div>
+        </div>
+        {% if shot.attempt and shot.attempt.selected_references %}
+        {% if editing_references %}
+        <form id="reference-edit-form-{{ shot.shot_id }}" method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/references/save"></form>
+        {% endif %}
+        <details class="visual-list-details" open>
+          <summary>{{ shot.attempt.selected_references|length }} references</summary>
+          <div class="visual-table-wrap">
+            <table class="visual-data-table visual-reference-table{% if editing_references %} visual-editing-references{% endif %}">
+              <thead>
+                <tr>
+                  {% if editing_references %}<th>Keep</th>{% endif %}
+                  <th>Ref</th><th>Preview</th><th>Source</th><th>Score</th><th>Coverage</th><th>Exclude / optional visible</th><th>Holistic description</th><th>Reference intent</th><th>Reference guidance</th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for reference in shot.attempt.selected_references %}
+                {% set selection = reference.visual_element_selection %}
+                <tr>
+                  {% if editing_references %}
+                  <td>
+                    <input form="reference-edit-form-{{ shot.shot_id }}" type="hidden" name="reference-token" value="{{ loop.index0 }}">
+                    <input form="reference-edit-form-{{ shot.shot_id }}" type="hidden" name="reference-id" value="{{ reference.reference_id }}">
+                    <input form="reference-edit-form-{{ shot.shot_id }}" type="checkbox" name="reference-keep" value="{{ loop.index0 }}" checked>
+                  </td>
+                  {% endif %}
+                  <td><strong>Image {{ reference.reference_index or loop.index }}</strong></td>
+                  <td class="visual-preview-cell">
+                    {% if reference.visualization_url %}<img class="thumb-img" src="{{ reference.visualization_url }}" alt="Selected reference {{ loop.index }}">
+                    {% elif reference.media_url %}<img class="thumb-img" src="{{ reference.media_url }}" alt="Selected reference {{ loop.index }}">
+                    {% else %}<span class="placeholder-line">No preview</span>{% endif %}
+                  </td>
+                  <td>
+                    {% if reference.source_scene_num is not none and reference.source_scene_num %}S{{ reference.source_scene_num }} / {{ reference.source_shot_num }}
+                    {% else %}{{ reference.source_shot_id }}{% endif %}
+                  </td>
+                  <td>{% if reference.score is defined and reference.score is not none %}{{ "%.3f"|format(reference.score) }}{% else %}-{% endif %}</td>
+                  <td>
+                    {% if selection %}
+                    <span>new: {{ selection.newly_covered_element_ids|element_names(selection) }}</span>
+                    <span>covered: {{ selection.already_covered_element_ids|element_names(selection) }}</span>
+                    {% else %}
+                    <span>{{ reference.covered_elements|join(", ") if reference.covered_elements else "none" }}</span>
+                    {% endif %}
+                  </td>
+                  <td>
+                    {% if selection %}
+                    <span>exclude: {{ selection.should_exclude|map(attribute="name")|join(", ") if selection.should_exclude else "none" }}</span>
+                    <span>optional: {{ selection.optional_or_uncertain|map(attribute="name")|join(", ") if selection.optional_or_uncertain else "none" }}</span>
+                    {% else %}
+                    <span>conflict: {{ reference.conflict_elements|join(", ") if reference.conflict_elements else "none" }}</span>
+                    {% endif %}
+                  </td>
+                  <td><p>{{ reference.holistic_description or "-" }}</p></td>
+                  <td>{% if reference.reference_intent %}<p>{{ reference.reference_intent }}</p>{% elif reference.reason %}<p>{{ reference.reason }}</p>{% else %}-{% endif %}</td>
+                  <td>
+                    {% if editing_references %}
+                    <textarea form="reference-edit-form-{{ shot.shot_id }}" name="reference-guidance" rows="4">{{ reference.reference_guidance or "" }}</textarea>
+                    {% else %}
+                    <p>{{ reference.reference_guidance or "-" }}</p>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+        {% elif shot.state.status == "reference_selection_failed" and shot.attempt and shot.attempt.error %}
+        <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+        {% else %}<div class="media-placeholder">No selected historical references</div>{% endif %}
+        <details class="attempt-details">
+          <summary>Historical Reference Selection Details</summary>
+          {% if shot.attempt %}
+            {% set elapsed = shot.steps|step_elapsed("reference_selection") %}
+            {% if elapsed %}<div class="placeholder-line">Elapsed {{ elapsed }}</div>{% endif %}
+            <div class="detail-block">
+              <h4>Logs</h4>
+              {{ attempt_log_table(shot.attempt.logs|logs_for("reference_selection")) }}
+            </div>
+            <div class="detail-block">
+              <h4>Selected references</h4>
+              <pre class="detail-json">{{ shot.attempt.selected_references|pretty_json }}</pre>
+            </div>
+            {% if shot.attempt.visual_element_details.get("reference_guidance") %}
+            <div class="detail-block">
+              <h4>Reference guidance</h4>
+              <pre class="detail-json">{{ shot.attempt.visual_element_details.get("reference_guidance")|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            {% if shot.attempt.error %}
+            <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+            {% endif %}
+          {% else %}<div class="placeholder-line">No collection attempt details yet.</div>{% endif %}
+        </details>
+      </div>
+
+      <div class="runtime-section step-card step-card-seedance-prompt">
+        {% set editing_seedance_prompt = request.query_params.get("edit_seedance_prompt") == shot.shot_id %}
+        <div class="step-heading">
+          <h3>Step 4 · Seedance Prompt Composition</h3>
+          <div class="step-actions">
+            {% if shot.attempt and shot.attempt.prompt.submitted_prompt and not editing_seedance_prompt and not (shot.state.status|running_like) %}
+            <a class="button small" href="/projects/{{ project.project_id }}?edit_seedance_prompt={{ shot.shot_id }}#{{ shot.shot_id }}">Edit</a>
+            {% endif %}
+            <button class="button small secondary" type="button" disabled title="Reflect will be designed later">Reflect</button>
+            <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/steps/seedance_prompt/run">
+              <button class="button small" type="submit" {% if shot.state.status|running_like %}disabled{% endif %}>Run Step</button>
+            </form>
+          </div>
+        </div>
+        {% if editing_seedance_prompt and shot.attempt and shot.attempt.prompt.submitted_prompt %}
+        <form class="prompt-edit-form" method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/seedance-prompt/save">
+          <label class="field-label" for="seedance-prompt-{{ shot.shot_id }}">Seedance Input Prompt</label>
+          <textarea id="seedance-prompt-{{ shot.shot_id }}" name="seedance-prompt" rows="14">{{ shot.attempt.prompt.submitted_prompt }}</textarea>
+          <div class="visual-edit-toolbar">
+            <a class="button small secondary" href="/projects/{{ project.project_id }}#{{ shot.shot_id }}">Cancel</a>
+            <button class="button small primary" type="submit">Save</button>
+          </div>
+        </form>
+        {% elif shot.attempt and shot.attempt.prompt.submitted_prompt %}
+        <details class="input-prompt-details">
+          <summary>Show composed prompt</summary>
+          <pre><code>{{ shot.attempt.prompt.submitted_prompt }}</code></pre>
+        </details>
+        {% else %}<div class="placeholder-line">Pending</div>{% endif %}
+        <details class="attempt-details">
+          <summary>Seedance Prompt Composition Details</summary>
+          {% if shot.attempt %}
+            {% set elapsed = shot.steps|step_elapsed("seedance_prompt") %}
+            {% if elapsed %}<div class="placeholder-line">Elapsed {{ elapsed }}</div>{% endif %}
+            <div class="detail-block">
+              <h4>Logs</h4>
+              {{ attempt_log_table(shot.attempt.logs|logs_for("seedance_prompt")) }}
+            </div>
+            {% if shot.attempt.prompt.submitted_prompt %}
+            <div class="detail-block">
+              <h4>Composed prompt</h4>
+              <pre class="detail-text">{{ shot.attempt.prompt.submitted_prompt }}</pre>
+            </div>
+            {% endif %}
+          {% else %}<div class="placeholder-line">No prompt composition details yet.</div>{% endif %}
+        </details>
+      </div>
+
+      <div class="runtime-section step-card step-card-seedance">
+        <div class="step-heading">
+          <h3>Step 5 · Seedance Video Generation</h3>
+          <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/steps/seedance_generation/run">
+            <button class="button small" type="submit" {% if shot.state.status|running_like %}disabled{% endif %}>Run Step</button>
+          </form>
+        </div>
+        {% if shot.attempt and shot.attempt.outputs.raw_video_asset_id %}
+          {% set output_asset = assets.get(shot.attempt.outputs.raw_video_asset_id) %}
+          {% if output_asset and output_asset.kind == "video" %}
+          <video class="shot-video video-preview" controls preload="metadata" src="/projects/{{ project.project_id }}/assets/{{ shot.attempt.outputs.raw_video_asset_id }}"></video>
+          {% endif %}
+        {% else %}<div class="video-placeholder"><span>No output video yet.</span></div>{% endif %}
+        {% if shot.attempt %}
+          <details class="attempt-details">
+            <summary>Seedance Attempt Details</summary>
+            {% set elapsed = shot.steps|step_elapsed("seedance_generation") %}
+            {% if elapsed %}<div class="placeholder-line">Elapsed {{ elapsed }}</div>{% endif %}
+            <div class="detail-grid">
+              <span>Attempt</span><code>{{ shot.attempt.attempt_id }}</code>
+              <span>Backend</span><code>{{ shot.attempt.runner.backend }}</code>
+              <span>Task</span><code>{{ shot.attempt.seedance.task_id or shot.attempt.response.task_id or "-" }}</code>
+            </div>
+            {% if shot.attempt.error %}
+            <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+            {% endif %}
+            <div class="detail-block">
+              <h4>Logs</h4>
+              {{ attempt_log_table(shot.attempt.logs|logs_for("seedance")) }}
+            </div>
+            {% if shot.attempt.seedance_details and shot.attempt.seedance_details.media_debug %}
+            <div class="detail-block">
+              <h4>Media debug</h4>
+              <pre class="detail-json">{{ shot.attempt.seedance_details.media_debug|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            {% if shot.attempt.seedance_details and shot.attempt.seedance_details.error_details %}
+            <div class="detail-block">
+              <h4>Error details</h4>
+              <pre class="detail-json">{{ shot.attempt.seedance_details.error_details|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            {% if shot.attempt.prompt.submitted_prompt %}
+            <div class="detail-block">
+              <h4>Submitted prompt</h4>
+              <pre class="detail-text">{{ shot.attempt.prompt.submitted_prompt }}</pre>
+            </div>
+            {% endif %}
+            <div class="detail-block">
+              <h4>Seedance request</h4>
+              <pre class="detail-json">{{ shot.attempt.request|pretty_json }}</pre>
+            </div>
+            <div class="detail-block">
+              <h4>Seedance response</h4>
+              <pre class="detail-json">{{ shot.attempt.response|pretty_json }}</pre>
+            </div>
+          </details>
+        {% endif %}
+      </div>
+
+      <div class="runtime-section visual-section step-card step-card-keyframe">
+        {% set visual_record = (shot.attempt.visual_element_details.get("visual_element_record", {}) if shot.attempt and shot.attempt.visual_element_details else {}) %}
+        {% set editing_produced_memory = request.query_params.get("edit_produced_memory") == shot.shot_id %}
+        <div class="step-heading">
+          <h3>Step 6 · Keyframe Maintaining <span>{{ shot.attempt.produced_visual_memory|length if shot.attempt else 0 }}</span></h3>
+          <div class="step-actions">
+            {% if editing_produced_memory %}
+            <button form="produced-memory-edit-form-{{ shot.shot_id }}" class="button small" type="submit">Save</button>
+            <a class="button small secondary" href="/projects/{{ project.project_id }}#{{ shot.shot_id }}">Cancel</a>
+            {% elif shot.attempt and shot.attempt.produced_visual_memory and not (shot.state.status|running_like) %}
+            <a class="button small" href="/projects/{{ project.project_id }}?edit_produced_memory={{ shot.shot_id }}#{{ shot.shot_id }}">Edit</a>
+            {% endif %}
+            <button class="button small secondary" type="button" disabled title="Reflect will be designed later">Reflect</button>
+            <form method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/steps/keyframe_maintaining/run">
+              <button class="button small" type="submit" {% if shot.state.status|running_like %}disabled{% endif %}>Run Step</button>
+            </form>
+          </div>
+        </div>
+        {% if shot.attempt and shot.attempt.produced_visual_memory %}
+        {% if editing_produced_memory %}
+        <form id="produced-memory-edit-form-{{ shot.shot_id }}" method="post" action="/projects/{{ project.project_id }}/shots/{{ shot.shot_id }}/produced-memory/save"></form>
+        {% endif %}
+        <details class="visual-list-details" open>
+          <summary>{{ shot.attempt.produced_visual_memory|length }} annotated keyframes</summary>
+          <div class="visual-table-wrap">
+            <table class="visual-data-table produced-visual-table{% if editing_produced_memory %} visual-editing-produced{% endif %}">
+              <thead>
+                <tr>{% if editing_produced_memory %}<th>Keep</th>{% endif %}<th>Preview</th><th>Source</th><th>Visible tracked elements</th><th>Reference quality</th><th>Holistic description</th></tr>
+              </thead>
+              <tbody>
+              {% for memory in shot.attempt.produced_visual_memory %}
+                <tr>
+                  {% if editing_produced_memory %}
+                  <td>
+                    <input form="produced-memory-edit-form-{{ shot.shot_id }}" type="hidden" name="memory-token" value="{{ loop.index0 }}">
+                    <input form="produced-memory-edit-form-{{ shot.shot_id }}" type="hidden" name="memory-asset-id" value="{{ memory.asset_id }}">
+                    <input form="produced-memory-edit-form-{{ shot.shot_id }}" type="checkbox" name="memory-keep" value="{{ loop.index0 }}" checked>
+                  </td>
+                  {% endif %}
+                  <td class="visual-preview-cell">
+                    {% if memory.visualization_url %}<img class="thumb-img" src="{{ memory.visualization_url }}" alt="Produced visual memory {{ loop.index }}">
+                    {% elif memory.media_url %}<img class="thumb-img" src="{{ memory.media_url }}" alt="Produced visual memory {{ loop.index }}">
+                    {% else %}<span class="placeholder-line">No preview</span>{% endif %}
+                  </td>
+                  <td>
+                    {% if memory.source_scene_num is not none and memory.source_scene_num %}S{{ memory.source_scene_num }} / {{ memory.source_shot_num }}
+                    {% else %}{{ memory.asset_id }}{% endif %}
+                  </td>
+                  <td>
+                    {% if memory.elements %}
+                      {{ memory.elements|map(attribute="name")|join(", ") }}
+                    {% elif memory.visible_elements %}
+                      {{ memory.visible_elements|join(", ") }}
+                    {% else %}<span>No tracked elements visible</span>{% endif %}
+                  </td>
+                  <td>
+                    {% if memory.elements %}
+                      {% set quality_rows = [] %}
+                      {% for element in memory.elements %}
+                        {% if element.type == "character" %}
+                          {% set _ = quality_rows.append((element.name or element.id) ~ ": " ~ (element.reference_quality or "full")) %}
+                        {% endif %}
+                      {% endfor %}
+                      {{ quality_rows|join(", ") if quality_rows else "-" }}
+                    {% else %}-{% endif %}
+                  </td>
+                  <td>
+                    {% if editing_produced_memory %}
+                    <textarea form="produced-memory-edit-form-{{ shot.shot_id }}" name="memory-holistic-description" rows="4">{{ memory.holistic_description or "" }}</textarea>
+                    {% else %}
+                    <p>{{ memory.holistic_description or "-" }}</p>
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </details>
+        {% elif shot.state.status == "keyframe_maintaining_failed" and shot.attempt and shot.attempt.error %}
+        <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+        {% else %}<div class="media-placeholder">No produced visual memory</div>{% endif %}
+        <details class="attempt-details">
+          <summary>Keyframe And VLM Details</summary>
+          {% if shot.attempt %}
+            {% set elapsed = shot.steps|step_elapsed("keyframe_maintaining") %}
+            {% if elapsed %}<div class="placeholder-line">Elapsed {{ elapsed }}</div>{% endif %}
+            <div class="detail-block">
+              <h4>Logs</h4>
+              {{ attempt_log_table(shot.attempt.logs|logs_for("postprocess")) }}
+            </div>
+            {% if shot.attempt.error %}
+            <div class="alert alert-error">{{ shot.attempt.error.type }}: {{ shot.attempt.error.message }}</div>
+            {% endif %}
+            <div class="detail-block">
+              <h4>Postprocess summary</h4>
+              <pre class="detail-json">{{ shot.attempt.postprocess|pretty_json }}</pre>
+            </div>
+            {% if visual_record.get("current_frame_annotations") %}
+            <div class="detail-block">
+              <h4>VLM frame annotation attempts</h4>
+              <pre class="detail-json">{{ visual_record.get("current_frame_annotations")|pretty_json }}</pre>
+            </div>
+            {% elif shot.attempt.visual_element_details.get("error_details") %}
+            <div class="detail-block">
+              <h4>VLM frame annotation attempts</h4>
+              <pre class="detail-json">{{ shot.attempt.visual_element_details.get("error_details")|pretty_json }}</pre>
+            </div>
+            {% elif shot.attempt.produced_visual_memory %}
+            <div class="detail-block">
+              <h4>VLM frame annotation attempts</h4>
+              <pre class="detail-json">{{ shot.attempt.produced_visual_memory|pretty_json }}</pre>
+            </div>
+            {% endif %}
+            <div class="detail-block">
+              <h4>Produced visual memory rows</h4>
+              <pre class="detail-json">{{ shot.attempt.produced_visual_memory|pretty_json }}</pre>
+            </div>
+          {% else %}<div class="placeholder-line">No keyframe or VLM attempt details yet.</div>{% endif %}
+        </details>
+      </div>
+    </div>
+  </section>
+  {% endfor %}
+</div>
+
+<section class="add-shot-after-list">
+  <form method="post" action="/projects/{{ project.project_id }}/shots/add">
+    <button class="button" type="submit">Add Shot</button>
+  </form>
+</section>
+
+<section class="project-summary">
+  <div class="summary-heading">
+    <h2>Current output</h2>
+    <div class="summary-actions">
+      <span>{{ project.completed_prefix }} / {{ project.shot_count }} completed</span>
+      <form method="post" action="/projects/{{ project.project_id }}/rerun-assembly">
+        <button class="button" type="submit" {% if not project.completed_prefix %}disabled{% endif %}>Rerun Assembly</button>
+      </form>
+    </div>
+  </div>
+  {% if project.current_final_video_asset_id %}
+    {% set final_asset = assets.get(project.current_final_video_asset_id) %}
+    {% if final_asset and final_asset.kind == "video" %}
+    <video class="final-video video-preview" controls preload="metadata" src="/projects/{{ project.project_id }}/assets/{{ project.current_final_video_asset_id }}"></video>
+    {% else %}
+    <div class="final-placeholder">Current prefix asset: {{ project.current_final_video_asset_id }}</div>
+    {% endif %}
+  {% else %}
+  <div class="final-placeholder">The current stitched video will appear here.</div>
+  {% endif %}
+  {% if assembly.logs %}
+  <details class="attempt-details">
+    <summary>Assembly logs</summary>
+    <div class="visual-table-wrap">
+      <table class="visual-data-table attempt-log-table">
+        <thead><tr><th>Time</th><th>Prefix</th><th>Mode</th><th>Final asset</th><th>Clips</th></tr></thead>
+        <tbody>
+        {% for log in assembly.logs %}
+          <tr>
+            <td>{{ log.time }}</td><td>{{ log.prefix_shot_id }}</td><td>{{ log.mode }}</td><td>{{ log.final_asset_id }}</td><td>{{ log.clip_count }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </details>
+  {% endif %}
+</section>
+{% endblock %}
