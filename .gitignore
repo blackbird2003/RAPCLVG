@@ -1,10 +1,47 @@
-models/
-models
+# Python and test artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local environments, secrets, and credentials
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json
+
+# Runtime state, generated media, local models, and caches
 .runtime/
+models/
 results*/
-log.txt
-**pycache**/
+outputs/
+artifacts/
+*.log
+*.mp4
+*.mov
+*.zip
+
+# Locally generated project-page mirror; the deployed site lives in RAPCLVG_Page.
+/docs/index.html
+/docs/assets/
+/Selected_videos/
+/Selected_videos_compressed.zip
+
+# Unpublished manuscript sources and local agent/editor state
+/paper/
+/.agents/
+/.claude/
+/.reasonix/
+/skills-lock.json
+
+# Build and editor files
+dist/
+build/
 .DS_Store
-paper/
-test/
-docs/references/
+.vscode/
