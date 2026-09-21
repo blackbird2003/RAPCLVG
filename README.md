@@ -4,6 +4,10 @@
 
 This repository contains the research implementation and a stepwise creation UI. Visit the [project page](https://blackbird2003.github.io/RAPCLVG_Page/) for generated-story demos, method visualizations, and qualitative results. The paper preprint link and citation will be added when they are publicly available.
 
+<p align="center">
+  <img src="https://blackbird2003.github.io/RAPCLVG_Page/assets/figures/pipeline.png" alt="Overview of Complementary Retrieval-Augmented Prompting" width="100%">
+</p>
+
 This project is a lightweight, migratable pipeline for long-form video generation. It generates a story shot by shot, maintains a visual-element memory across shots, retrieves complementary historical references, and composes structured multimodal prompts to keep characters, scenes, and objects consistent over time.
 
 The project is designed to be API-agnostic at the generation layer. The current implementation uses Seedance as the video backend, but the pipeline core does not depend on it.
